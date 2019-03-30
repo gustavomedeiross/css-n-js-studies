@@ -1,0 +1,10 @@
+The purpose of Classes and Ids is to call specific elements (calling elements throught tag name can cause problems).
+Only one element can have a specific Id, while multiple elements can have a specific Class. Nowdays, almost no one will use an Id, because it's very specific (just one element). But sometimes, to use some functions or tags, you will need to use Ids.
+
+@ <htmlElement id='nameOfTheId'> //this will call specify the element that have the id, and the element that haves it.
+@ <htmlElement class='nameOftheClass'> //works the same way as the Id.
+
+to call in CSS...
+
+@ #nameOfTheId {style}
+@ .nameOfTheClass {style}
