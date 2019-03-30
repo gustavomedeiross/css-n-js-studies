@@ -3,6 +3,6 @@ To call an element in CSS, you need to use the selectors.
 
 @ <style>The CSS goes here</style> /*this tag goes on the <head></head> section */ 
 
-@ htmlElementTag {style} /*calling a html element - this way, you'll call all the elements that have that tag*/
-@ .htmlClass {style} /*calling a html Class*/
-@ #htmlId {style } /*calling a html Id*/
+@ htmlElementTag {style} //calling a html element - this way, you'll call all the elements that have that tag
+@ .htmlClass {style} //calling a html Class
+@ #htmlId {style } //calling a html Id
