@@ -5,5 +5,5 @@ The objective of this repository is to maintain my studies about Frontend Web De
 Throughout the notes, I will follow a semantic/structural pattern. The rules are set here:
   1 -> Any text that doesn't start with symbols or special characters are basically concecpts about the main topic;
   2 -> @ something - is going to be a new command, attribute, anything that goes directly in the code. Keeping it simple: Is      the Syntax;
-  3 -> <!-- -->, /* or // - are going to be a comment, normally a important note for the syntax;
+  3 -> // - is going to be a comment, normally a important note for the syntax, or what it does exactly;
   4 -> !IMPORTANT - It's going to be used just in REALLLY important things. Messing around with this one is not a great idea.
