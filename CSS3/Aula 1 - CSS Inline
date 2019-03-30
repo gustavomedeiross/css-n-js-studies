@@ -1,3 +1,3 @@
-- O CSS inline é basicamente uma forma de mudar o estilo de algum elemento html isolado. Não é utilizado na prática pois é muito desorganizado, afinal, é um atributo html. (Mas é a forma mais simples/iniciante de se fazer).
+The CSS inline is basically a way of changing the style of some isolated html element. It's not really used because is very unorganized (it goes straight on the html that you are wanting to change the style).
 
 @ <elementoHTML style='estilos'>
