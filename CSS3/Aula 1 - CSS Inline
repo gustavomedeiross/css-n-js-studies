@@ -1,0 +1,3 @@
+- O CSS inline é basicamente uma forma de mudar o estilo de algum elemento html isolado. Não é utilizado na prática pois é muito desorganizado, afinal, é um atributo html. (Mas é a forma mais simples/iniciante de se fazer).
+
+@ <elementoHTML style='estilos'>
