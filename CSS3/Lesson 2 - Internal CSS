@@ -1,1 +1,8 @@
-#empty
+The main difference between CSS Inline and Internal CSS is that you have to call the element(s) that you're going to do your styling (in inline you don't have to call, because you're styling directly on the element).
+To call an element in CSS, you need to use the selectors.
+
+@ <style>The CSS goes here</style> /*this tag goes on the <head></head> section */ 
+
+@ htmlElementTag {style} /*calling a html element - this way, you'll call all the elements that have that tag*/
+@ .htmlClass {style} /*calling a html Class*/
+@ #htmlId {style } /*calling a html Id*/
