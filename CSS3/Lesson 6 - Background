@@ -1,0 +1,22 @@
+The background property in CSS sets the background of a html element.
+
+@ background-color: color; 
+@ background-image: url('addressOfTheElement.png'); //this property sets a image as the background of any html element. You need to use the url().
+
+These are a little bit more tricky:
+
+@ background-attachment: scroll|fixed|local|initial|inherit; //this property sets how the background image will behave.
+
+@ background-clip: border-box|padding-box|content-box|initial|inherit; //this property sets what areas of the box-sizing the background will be (padding or not, border or not, just the conten, etc).
+
+@ background-origin: padding-box|border-box|content-box; //this property sets where the background will start (it's always - if the position is default - from the upper left corner, but can be from the padding, the border, or just the content).
+
+@ background-position: value; //this will set the start the starting position of the element (the default is top left corner) - this one can have a lot of values, so the link that talks a little bit more about is here --> https://www.w3schools.com/cssref/pr_background-position.asp
+
+@ background-repeat: repeat|no-repeat|repeat-x|repeat-y|initial|inherit; //this will say if the background can repeat to cover all the space that is remaining or not (or only horizontally - x - or vertically - y).
+
+@ background-size: auto|lenght|cover|contain|initial|inherit; //specifies the size of the background image. the values are a little bit more complicated, as position is. so, here is the link: https://www.w3schools.com/cssref/css3_pr_background-size.asp
+
+
+Other references: 
+https://www.w3schools.com/css/css_background.asp
