@@ -17,6 +17,7 @@ These are a little bit more tricky:
 
 @ background-size: auto|lenght|cover|contain|initial|inherit; //specifies the size of the background image. the values are a little bit more complicated, as position is. so, here is the link: https://www.w3schools.com/cssref/css3_pr_background-size.asp
 
+@ background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; // SHORTHAND
 
 Other references: 
 https://www.w3schools.com/css/css_background.asp
