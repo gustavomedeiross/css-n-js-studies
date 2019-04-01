@@ -5,7 +5,7 @@
 
 //the em is really useful, but the main "danger" is the fact that it is easily coumpaundable. That's why rem was originally created for.
 
-!IMPORTANT: The em will first search if the font-size of the current element wasn't already changed. If it was, the basis value of the em will be the font-size of the element itself, not the parent (7:40 of Kevin Powell's video about ems and rems).
+!IMPORTANT: The em will first search if the font-size of the current element wasn't already changed. If it was, the basis value of the em will be the font-size of the element itself, not the parent (7:00 of Kevin Powell's video about ems and rems).
 
 
 @ vw //is relative to the viewport width. 1vw is 1% of the viewport width (viewport = size of the window browser).
