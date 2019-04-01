@@ -16,15 +16,20 @@ The relative units are essential to do responsive websites. They work - as the n
 @ vw //is relative to the viewport width. 1vw is 1% of the viewport width (viewport = size of the window browser).
 @ vh //the same as vw, but the height.
 
+//vh can be useful for setting the height of things (for example, the background) and some titles (but you'll need media queries)
+
+
 @ vmin //the same as vw/vh, but is relative to the smaller window dimension (if the width is smaller than the height, it will be the width. if the width becomes bigger, it will be the height).
 @ vmax //the same as vmin, but in this case is the biggest window dimension.
+
+//is really rare to use these kinds of units, but you can use to set the size of titles (with vmin), because you don't need to set the media queries to the really big screens.
 
 @ % //the percentage is relative to the parent element .this time, the property matters. for example, if the width of the parent is 200px, 50% of the children will be 100px (but only the width).
 
 w3schools tip: "The em and rem units are practical in creating perfectly scalable layout!"
 
-!IMPORTANT: If the font-size is set i
 
 More references: 
 https://www.w3schools.com/css/css_units.asp
 https://www.youtube.com/watch?v=_-aDOAMmDHI&t=103s
+https://www.youtube.com/watch?v=IWFqGsXxJ1E
