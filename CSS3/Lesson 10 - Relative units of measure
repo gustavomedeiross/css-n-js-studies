@@ -1,6 +1,0 @@
-
-
-@ em //is relative to the font-size of the parent element. It works in any type of element, but ALWAYS will be based on the font-size (even if the property you are changing the size is not the actual font-size - for example: you can use with width or height).
-@ rem //is the same thing as the em, but this time it will be only the ROOT element (:root or html). So, the font-size of the parent element doesn't matter when using the rem (unless your parent is the actual html - but you got the point). The default font-size of the html is 16px.
-
-
