@@ -1,0 +1,3 @@
+The <div> is a html tag that creates a division on the page. Everything that is inside the div will be affected by the style.
+
+@ <div></div> //creates the div in html
