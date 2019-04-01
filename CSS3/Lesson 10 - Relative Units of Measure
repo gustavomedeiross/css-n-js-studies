@@ -3,6 +3,11 @@
 @ em //is relative to the font-size of the parent element. It works in any type of element, but ALWAYS will be based on the font-size (even if the property you are changing the size is not the actual font-size - for example: you can use with width or height).
 @ rem //is the same thing as the em, but this time it will be only the ROOT element (:root or html). So, the font-size of the parent element doesn't matter when using the rem (unless your parent is the actual html - but you got the point). The default font-size of the html is 16px.
 
+//the em is really useful, but the main "danger" is the fact that it is easily coumpaundable. That's why rem was originally created for.
+
+!IMPORTANT: The em will first search if the font-size of the current element wasn't already changed. If it was, the basis value of the em will be the font-size of the element itself, not the parent (7:40 of Kevin Powell's video about ems and rems).
+
+
 @ vw //is relative to the viewport width. 1vw is 1% of the viewport width (viewport = size of the window browser).
 @ vh //the same as vw, but the height.
 
@@ -12,6 +17,8 @@
 @ % //the percentage is relative to the parent element .this time, the property matters. for example, if the width of the parent is 200px, 50% of the children will be 100px (but only the width).
 
 w3schools tip: "The em and rem units are practical in creating perfectly scalable layout!"
+
+!IMPORTANT: If the font-size is set i
 
 More references: 
 https://www.w3schools.com/css/css_units.asp
