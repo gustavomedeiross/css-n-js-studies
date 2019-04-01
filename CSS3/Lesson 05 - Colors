@@ -2,6 +2,8 @@ In CSS, you have 4 ways to set a color: name of the color, rgb, rgba and hexadec
 
 @ color: colorOfTheFont //this command sets the color of the Font.
 
+!IMPORTANT: You can use the color "transparent".
+
 @ color: nameOfTheColor //some colors have their name in CSS (ex: White).
 @ color: rgb (0, 255, 255) //in rgb, the values need to be between 0 and 255 - r = red, g = green and b = blue.
 @ color: rgba(0, 0, 0, 1) //a is basically the opacity - the value of opacity needs to be between 0 and 1.
