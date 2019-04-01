@@ -4,6 +4,11 @@ The relative units are essential to do responsive websites. They work - as the n
 @ rem //is the same thing as the em, but this time it will be only the ROOT element (:root or html). So, the font-size of the parent element doesn't matter when using the rem (unless your parent is the actual html - but you got the point). The default font-size of the html is 16px.
 
 //the em is really useful, but the main "danger" is the fact that it is easily coumpaundable. That's why rem was originally created for.
+//if you want to do a thing that is a little bit more "continuous", use rem (it's way better to use rems rather than px).
+//if you want to do something a little bit more "flexible", use em.
+
+//rems work really well with media queries! (just change the html font-size on the media querie)
+
 
 !IMPORTANT: The em will first search if the font-size of the current element wasn't already changed. If it was, the basis value of the em will be the font-size of the element itself, not the parent (7:00 of Kevin Powell's video about ems and rems).
 
