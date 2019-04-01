@@ -1,0 +1,6 @@
+In CSS there are two types of measures: Fixed and relative (reference). Nowdays, with the sites working on different platforms, it's better to use the relative measures, but sometimes you'll NEED to use the fixed ones.
+Types of measures:
+
+@ cm|mm|in
+@ px
+@ pt|pc //a pt (point) can sometimes have the same size of a pixel, depending on the display quality. The pc (picas) is basically 10pc (points)
