@@ -1,0 +1,7 @@
+Styles of unordered lists:
+
+@ list-style-type: none|square|circle|disc|... //most of the time you'll use list-style-type: none to take off those dots in the beginning.
+
+Styles of ordered lists:
+
+@ list-style-type: upper-roman|lower-alpha|... //these are rarely used, but is possible sometimes.
