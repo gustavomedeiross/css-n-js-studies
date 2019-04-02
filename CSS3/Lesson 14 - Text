@@ -1,0 +1,7 @@
+In CSS you can use some properties to change the style of your text. Let's see them:
+
+@ color: color; //changes the text color.
+
+@ text-align: left|right|center|justify; //this property aligns the text (it's realy self explanatory).
+
+!IMPORTANT: The "text-align: center" can be used to center the content of some container
