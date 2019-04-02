@@ -4,4 +4,22 @@ In CSS you can use some properties to change the style of your text. Let's see t
 
 @ text-align: left|right|center|justify; //this property aligns the text (it's realy self explanatory).
 
-!IMPORTANT: The "text-align: center" can be used to center the content of some container
+!IMPORTANT: The "text-align: center" can be used to center the content of some container (if the content have the display: inline or inline-block).
+
+@ text-decorantion: none|overline|underline|linethrough; //this property sets if the text will have any lines (like underlines).
+
+@ text-transform: uppercase|lowercase|capitalize; //specifies if the text will be in uppercase, lowercase or capitalized. The CSS is the correct way to change these kind of things, using html to set uppercase will be a mess.
+
+@ text-indent: size; //sets the indentation of the first line in the text (parágrafo - é o famoso 2 dedinhos).
+
+@ letter-spacing: size; //sets the space between the letters in the text.
+
+@ line-height: size; //sets the space between the lines.
+
+@ direction: rtl; //this command literally reverses the text (as if the text-space was mirrored).
+
+@ word-spacing: size; //space between words.
+
+@ text-shadow: positionOfTheHorizontalShadow positionOfTheVerticalShadow colorOfTheShadow; //this property sets a shadow to the text. The "positionOfTheHorizontalShadow" is done using size units (px, for example).
+
+
