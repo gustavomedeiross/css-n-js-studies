@@ -1,0 +1,9 @@
+The outline is basically a border, but at the same time it's not. What I mean by that is the fact that while the border is apart of the CSS box-model, the outline isn't. 
+The point is: the outline will go outside the element (so, outside the border), and will be above the margin.
+
+@ outline: style|width|color; //the outline have the exact same parameters of the border (but doesn't have the "radius" property) - you can set them individually (for example: outline-style).
+
+@ outline-offset: size; //this sets the spacing between the outline and the edge of the border. It can not be set throught the shorthand method.
+
+More references: 
+https://www.w3schools.com/css/css_outline.asp
