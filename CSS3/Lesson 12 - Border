@@ -1,0 +1,19 @@
+Border are very useful in css. It's important to know that unless you declare the box-sizing: border-box, the border will be created "outside" the element.
+
+@ border: style width color; //the border always need a style and a width to show (the default color is black).
+
+@ border-style: solid|dotted|dashed|double|groove|ridge|inset|outset|none|hidden; 
+
+@ border-width: size; //You can use the values thin|medium|thick.
+
+The border can have different styles, color and width in all 4 sides (top, right, bottom and left). You can change, for example, just the top color of your border (using border-top-color)
+
+All the shorthands follow the same order of the padding and margin (4 values, 3 values, 2 values)
+
+@ border-radius: size|radians; //rounds the corner of the border - even if the element doesn't have borders!
+
+
+//tip: borders can be useful to know a element's box-sizing in a case where you don't know very well what's happening.
+
+More references:
+https://www.w3schools.com/css/css_border.asp
