@@ -1,0 +1,14 @@
+There are three "root types" of font, being: Serif, Sans-serif and Monospace.
+
+!IMPORTANT: Using fonts.google.com is a very good way to find nice-looking fonts (and is very easy to import the fonts, google already does it for you - just copy the link)
+
+@ font-family: 'nameOfTheFont1', nameOfTheFont2, nameOfTheFont3 [...]; //if you put the commas, it means "if the browser doesn't support that font, what font will be used?" - It follows the sequence.
+
+@ font-style: normal|italic;
+
+@ font-size: size; //is important to use relative CSS units!
+
+w3schools tip: Use a Combination of Percent and Em. The solution that works in all browsers, is to set a default font-size in percent for the <body> element.
+
+
+@ font-weight: number
