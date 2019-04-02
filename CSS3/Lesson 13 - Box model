@@ -2,7 +2,7 @@ The CSS Box Model is a box that wraps around every html element. It consists of:
 
 When you set the width or the height of an element, you're just setting the sizes of the content area. To calculate the full size, you need to consider the content + padding + border + margin.
 
-//The element size is the size of the content + padding + border + margin of that element. So, content-area is just a part of the element.
+//The element size is the size of the content + padding + border of that element. So, content-area is just a part of the element.
 
 //The color of the padding is transparent.
 
