@@ -5,5 +5,7 @@ The point is: the outline will go outside the element (so, outside the border), 
 
 @ outline-offset: size; //this sets the spacing between the outline and the edge of the border. It can not be set throught the shorthand method.
 
+Note from w3schools: "Outline differs from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the width of the outline."
+
 More references: 
 https://www.w3schools.com/css/css_outline.asp
