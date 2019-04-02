@@ -1,1 +1,15 @@
-#empty
+The margin and padding are used to create space between elements. The difference between them is that the margin creates space outside the element, where padding creates space between the content and the border of the element (inside the element)
+
+@ margin: anySize; //it will change all 4 (top, right, left and bottom) with the same spacing.
+@ margin-top|margin-right|margin-bottom|margin-left //you can set the spacing individually
+
+@ padding : anySize;
+@ padding-top|padding-right|padding-bottom|padding-left
+
+USEFUL SHORTHANDS //works with both margin and padding
+
+@ margin: top right bottom left; //if you set 4 different values, CSS will understand the values in this order.
+
+@ margin: top rightAndLeft bottom; //if you set 3 different values.
+
+@ margin: topAndBottom rightAndLeft; //if you set 2 different values.
