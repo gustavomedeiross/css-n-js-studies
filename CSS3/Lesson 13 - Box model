@@ -1,0 +1,21 @@
+The CSS Box Model is a box that wraps around every html element. It consists of: Content, Padding, Border and Margin (the box model follows this order)
+
+When you set the width or the height of an element, you're just setting the sizes of the content area. To calculate the full size, you need to consider the content + padding + border + margin.
+
+//The element size is the size of the content + padding + border + margin of that element. So, content-area is just a part of the element.
+
+//The color of the padding is transparent.
+
+@ box-sizing: border-box|content-box|padding-box; //this property changes how the width and height will affect the element's size. The default is content-box (You can only set the width or height of the content).
+
+!IMPORTANT: A good tip from Kevin Powell is to use this in almost every code:
+*, *::before, *::after{
+box-sizing: border-box
+}
+
+The main point about using this, is because you don't need to be calculating every single padding and margin that you do, working with border-box is way easier.
+
+
+More References:
+https://www.w3schools.com/css/css_boxmodel.asp
+https://www.youtube.com/watch?v=WlGQdgy-M6w
