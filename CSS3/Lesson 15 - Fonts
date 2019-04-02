@@ -11,4 +11,9 @@ There are three "root types" of font, being: Serif, Sans-serif and Monospace.
 w3schools tip: Use a Combination of Percent and Em. The solution that works in all browsers, is to set a default font-size in percent for the <body> element.
 
 
-@ font-weight: number
+@ font-weight: number|normal|bold; //the number is between 100 and 900 (the value needs to be diviible to 100), and the "bold" (normal bold) is 400.
+
+@ font-variant: small-caps; //this command sets the font to be all uppercase, however the converted letters will have a smaller font size.
+
+More references:
+https://www.w3schools.com/css/css_font.asp
