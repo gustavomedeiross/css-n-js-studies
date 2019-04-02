@@ -1,0 +1,13 @@
+The links have some pseudo-classes that can be customized to make your site look better.
+
+//links have color: blue and font-style: underline by default.
+
+@ a:link{styles} //a normal, unvisited link.
+
+@ a:visited{styles} //a visited link.
+
+@ a:hover{styles} //how the link looks like when the mouse is over it.
+
+@ a:active{styles} //how the link looks like when the user clicks the link.
+
+!IMPORTANT: w3schools tip: When setting the style for several link states, there are some order rules: a:hover MUST come after a:link and a:visited / a:active MUST come after a:hover
