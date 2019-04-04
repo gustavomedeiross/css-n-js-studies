@@ -5,3 +5,12 @@ Styles of unordered lists:
 Styles of ordered lists:
 
 @ list-style-type: upper-roman|lower-alpha|... //these are rarely used, but is possible sometimes.
+
+@ list-style-image: url('imgAdress'); //Sets an image to the list item marker.
+
+The list item marker can be outside (default) or inside the list item. The main difference is that when you're styling your ul, if the marker is outside, it will be not affected by the li styles (and majority of the time, this doesn't look good).
+
+@ list-style-position: inside|outside;
+
+
+You can create menus using <ul> and <li> (actually, that's the most common way menus are made nowdays - 2019).
