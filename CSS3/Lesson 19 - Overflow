@@ -1,0 +1,10 @@
+The Overflow is (as the name already tells) any content that is going out the space that it was supposed to be in (overflow: transbordar). 
+
+@ overflow: visible; //default;
+
+@ overflow: hidden; //the overflow will not appear;
+
+@ overflow: scroll|scroll-y|scroll-x; //a scroll bar will appear (even if there isn't any overflow) to see the overflow (in this case, the overflow will not invade other element's space).
+
+@ overflow: auto; //this option sets a scroll IF NECESSARY (and sets the corret axis scroll bar too!)
+
