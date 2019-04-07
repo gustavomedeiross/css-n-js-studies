@@ -1,0 +1,16 @@
+The topic of this lesson is about 4 types of display (there is a lot more in CSS, but we're going to talk about the 3 most basic ones).
+
+All elements in CSS have a "natural" display (always). Changing those displays will change some characteristics too.
+
+@ display: block; //this display occupies all the line that he's in. This means that if there's an element that have display block in one line, no other element can go in the same line (even if the content of the first element doesn't occupy all the width). The next elements will go in the next line. 
+
+@ display: inline; //this display is basically the opposite of the display block, because if you have any content in one line, and there is any space left, the next element will concatenate with it.
+
+@ display: inline-block; //this display is basically the union of the display block and display inline BECAUSE with display inline you can't change the width and the height of the element, and with display block, if there's space left for other elements, they can't occupy this space (they will have to go to the next line). The display inline-block let's you change your width and height AND still let the next elements occupy the space left in the line.
+
+!IMPORTANT: the display inline and inline-block have a different sizing when compared to display block (it's not about the width or the height, but the point is: if you set them with the same size, they will have a difference of 4px - that's like a weird thing about CSS).
+
+@ display: none; //this display acts like if the element was never there (the element will no longer influence in the document flow and it wont be visible) - but you can see the element in the source code.
+
+//if you want the element to not be visible BUT still occupy it's space in the document flow - you can use:
+@ visibility: hidden;
