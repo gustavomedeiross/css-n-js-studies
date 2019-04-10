@@ -17,7 +17,10 @@ These properties (top, bottom, right and left) can only work if position is set 
 
 @ position: fixed; //you can change the position, and is going to be relative to the viewport (so bottom: 50px will put the element 50px above the end of the screen), and will not go out of there EVER. If you use position fixed, the element will never go out of the screen (or even change positioning). If you scroll, it will continue there. 
 
+//you need to know that position fixed makes the element go out of the document flow
+
 //the position: fixed is very used for headers and chat icons on the right bottom corner.
+
 
 @ position: sticky; //makes the item "stick". Works as a "limit". So, for example, let's say you have an element that starts on the middle of the screen (vertically), and you set top: 0 - when you scroll down your page, and the element touch the top of the viewport, the element will stay there. If your scroll up again, the element will go back to it's original position. So basically, the position sticky works like a "limit" for an element.
 
