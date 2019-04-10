@@ -13,6 +13,10 @@ These properties (top, bottom, right and left) can only work if position is set 
 
 @ position: relative; // the element will be positioned relative to it's normal position. So, for example, top: 50px will move the element 50px to the bottom (because it creates 50px of "space" in the top).
 
-@ position: absolute; //this is really useful. The position absolute will be relative to first parent that does not have a position static. So, for example: 
+@ position: absolute; //this is really useful. The position absolute will be relative to first parent that does not have a position static. So, if you set top: 50px, this will put your element 50px underneath the parent that doesn't have static positioning. (It's pretty common to use position: relative to use the parent as a reference - for example: overlays
 
-If you have a div
+@ position: fixed; //you can change the position, and is going to be relative to the viewport (so bottom: 50px will put the element 50px above the end of the screen), and will not go out of there EVER. If you use position fixed, the element will never go out of the screen (or even change positioning). If you scroll, it will continue there. 
+
+//the position: fixed is very used for headers and chat icons on the right bottom corner.
+
+@ position: sticky
