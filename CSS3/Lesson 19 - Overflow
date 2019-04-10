@@ -8,3 +8,5 @@ The Overflow is (as the name already tells) any content that is going out the sp
 
 @ overflow: auto; //this option sets a scroll IF NECESSARY (and sets the corret axis scroll bar too!)
 
+//in some cases, overflow auto will do different things
+
