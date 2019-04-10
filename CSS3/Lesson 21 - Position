@@ -1,0 +1,18 @@
+The position property will set how the element be showned on the screen.
+
+@ position: static|relative|absolute|fixed|sticky;
+
+@ top : size;
+@ bottom: size;
+@ right: size;
+@ left: size;
+
+These properties (top, bottom, right and left) can only work if position is set first. And depending on the position type, they will behave differently.
+
+@ position: static; // this property is the default. Basically the element will not "move", even if you change the "top, bottom...". The elements will not be affected.
+
+@ position: relative; // the element will be positioned relative to it's normal position. So, for example, top: 50px will move the element 50px to the bottom (because it creates 50px of "space" in the top).
+
+@ position: absolute; //this is really useful. The position absolute will be relative to first parent that does not have a position static. So, for example: 
+
+If you have a div
