@@ -1,0 +1,16 @@
+//this class doesn't consider CSS Grid or Flexbox
+To align an element on the screen you must know first what is the display of that element.
+
+If the display is block:
+
+@ margin: auto; //it will be aligned on the center.
+@ margin-left: auto; //it will be aligned on the right.
+@ margin-right: auto; //it will be aligned on the left.
+
+If the display is inline or inline-block:
+
+You need to create a container to that element (or, if it already having it) and set this property on the container (or parent element)
+
+@ text-align: center; //it will go to the center of the parent space.
+@ text-align: right; //it will go to the right of the parent space.
+@ text-align: left; //it will go to the left of the parent space.
