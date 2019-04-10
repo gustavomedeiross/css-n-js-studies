@@ -1,0 +1,30 @@
+Ok, to start off, is really important to say that using floats to create layouts in CSS is a big workaround. Nobody in 2019 should use float to create layouts actually (maybe in really specific cases, I don't know).
+
+Originally float was created just for the purpose of making images float in a specific corner of your screeen, and making text "hug" the image - just like a newspaper or a magazine would do. Later, when the internet started to create it's own style of design, float started to be used for different things.
+
+Nowdays, there are way easier forms of doing web layouts - for example CSS Grid and Flexbox. But anyway, is nice to know it.
+
+
+@ float: left|right|none|inherit; //makes the element (even a display: block) float. If a element is set with float: left, the next element of the document flow will be placed on the right of that element - the left element will float.
+
+@ clear: left|right|both|none; //this property preventes a element to "float" on the other side. Example: if you have the element1 (with float: left) and you don't want the element2 to go on the right of the element1 (to float on it's right), you can set "clear: left or both". - both will make the element never float on any side.
+
+//the clear left only works when the element have display block.
+
+
+
+
+The major usage of float is to make web layouts and menus.
+@ nav {float: right} //makes the navigation menu go to the right.
+@ li {float: left} //makes an unordered list horizontal (just like a menu header). 
+
+
+
+Sometimes, when creating layouts, a problem can appear: You set the float: left for the li (to make a menu, for example), and the next element (that is not in the ul) goes on the right of your element. You can think of using clear: both, and majority of time this will work. BUT, there's a better/safer way of doing it:  //this is called "the clearfix hack" or just "clearfix"
+@ li::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+//there's another old way of doing this "clearfix hack" - using overflow: auto. But the main problem is that you need to have control of your margins and paddings.
