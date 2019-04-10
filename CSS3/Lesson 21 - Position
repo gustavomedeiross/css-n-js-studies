@@ -19,4 +19,6 @@ These properties (top, bottom, right and left) can only work if position is set 
 
 //the position: fixed is very used for headers and chat icons on the right bottom corner.
 
-@ position: sticky
+@ position: sticky; //makes the item "stick". Works as a "limit". So, for example, let's say you have an element that starts on the middle of the screen (vertically), and you set top: 0 - when you scroll down your page, and the element touch the top of the viewport, the element will stay there. If your scroll up again, the element will go back to it's original position. So basically, the position sticky works like a "limit" for an element.
+
+!IMPORTANT: The position: sticky will only be stick the parent still on the screen. If the parent (container) go off the screen, the element will go off with it.
