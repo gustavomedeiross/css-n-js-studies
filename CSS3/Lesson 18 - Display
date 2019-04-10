@@ -6,6 +6,8 @@ All elements in CSS have a "natural" display (always). Changing those displays w
 
 @ display: inline; //this display is basically the opposite of the display block, because if you have any content in one line, and there is any space left, the next element will concatenate with it.
 
+//with display: inline the properties margin-bottom, margin-top, padding-bottom e padding-top doesn't work. You can change just the side margins and paddings.
+
 @ display: inline-block; //this display is basically the union of the display block and display inline BECAUSE with display inline you can't change the width and the height of the element, and with display block, if there's space left for other elements, they can't occupy this space (they will have to go to the next line). The display inline-block let's you change your width and height AND still let the next elements occupy the space left in the line.
 
 !IMPORTANT: the display inline and inline-block have a different sizing when compared to display block (it's not about the width or the height, but the point is: if you set them with the same size, they will have a difference of 4px - that's like a weird thing about CSS).
