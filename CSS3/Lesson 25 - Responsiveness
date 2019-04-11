@@ -1,0 +1,23 @@
+Is really important to make your website responsivo, so that mobile and desktop users can navigate through your page without any problems.
+
+The first step to make this happen, is to use the viewport tag (Lesson 24). But is also really important to use relative units of measure!
+
+em's are really good for responsiveness, but, the main problem is that they will stack - and can go really out of control, if you are not careful.
+
+rem's can have a really great usage for doing "fixed" stuff. This means that the size will not stack and go out of control, but at the same time, will always be relative to the root element.
+
+% are awesome for a tone of different things, like setting the size of a container, setting the size of the content, etc.
+
+vh is a FUNDAMENTAL unit of measure, because it will always consider the size of the screen - it's heavily used for making containers, like headers, etc.
+
+vw can be useful to use on titles because it will grow based on the width of the viewport. But you will problably have to use some media queries to the really big or really small screens. - It's not cool for using with paragraphs doe.
+
+vmin is really useful for titles too, maybe even better than vw. The good thing is that you don't need to be worried about the "big screen mediaqueries", but maybe a media queries for small screens can be good - specially if the mobile is turned into landscape mode. 
+
+!IMPORTANT: if you use vw or vmin, is really important to do a lot of testing.
+
+
+
+More references:
+https://www.youtube.com/watch?v=_-aDOAMmDHI
+https://www.youtube.com/watch?v=IWFqGsXxJ1E
