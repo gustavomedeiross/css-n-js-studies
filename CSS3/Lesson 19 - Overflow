@@ -4,7 +4,11 @@ The Overflow is (as the name already tells) any content that is going out the sp
 
 @ overflow: hidden; //the overflow will not appear;
 
-@ overflow: scroll|scroll-y|scroll-x; //a scroll bar will appear (even if there isn't any overflow) to see the overflow (in this case, the overflow will not invade other element's space).
+@ overflow: scroll; //a scroll bar will be set on the 2 axis - x and y - (even if there isn't any overflow) to see the overflow (in this case, the overflow will not invade other element's space).
+
+@ overflow-y: scroll; //sets a scroll bar only on x axis.
+@ overflow-x: scroll; //sets a scroll bar only on y axis.
+
 
 @ overflow: auto; //this option sets a scroll IF NECESSARY (and sets the corret axis scroll bar too!)
 
