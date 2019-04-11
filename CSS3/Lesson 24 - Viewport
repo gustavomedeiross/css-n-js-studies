@@ -1,0 +1,15 @@
+What is viewport?
+w3schools: "The viewport is the user's visible area of a web page.
+The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen."
+
+Some years ago, the webpages were made only for computers (they used fixed measures). When mobile devices started to appear on the market, the "quick solution" was to make everything smaller - so 300px wasn't really 300px on the phone.
+
+To solve this, HTML5 brought this tag:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+This tag will make the website-width follow the screen-width of the device.
+
+More resources:
+https://www.w3schools.com/css/css_rwd_viewport.asp
