@@ -1,0 +1,30 @@
+This lesson doesn't consider Flexbox and Grid to do vertical alignment.
+
+There's some ways to align your content vertically.
+
+1st method - Position absolute and transform.
+@ #item{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); //this is set because the "top: 50%" is considering from the top of the element.
+}
+
+//the parent needs to be position: relative - or it will be 50% considering the body height.
+
+
+2nd method - Line height.
+@ #item{
+  line-height: sizeOfTheParentHeight;
+}
+
+//this method is very messy, not recommended at all.
+
+
+3rd method - Padding.
+
+@ #item{
+  padding-top: sizeY;
+  padding-bottom: sizeY
+}
+
+//for simple things, this can work - but the main problem is that is not considering the content's height (it will be bigger than the sum of both paddings).
