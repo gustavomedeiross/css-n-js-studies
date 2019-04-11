@@ -1,0 +1,12 @@
+@ @media screen and (max-width: 600px){
+  this code will only be "activated" if the width has <= 600px. 
+}
+
+@ @media screen and (min-width: 800px){
+  this code will only be "activated" if the width has >= 800px.
+}
+
+//the media queries works like an "if".
+
+!IMPORTANT:
+@ all: unset; //this command makes the element go back to it's default CSS. It's really useful when doing mobile and desktop sites, because sometimes a element is completely different on both ones. Using this in your media queries will save you a tone of lines and time.
