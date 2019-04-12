@@ -13,3 +13,5 @@ a += 5;
 
 is the same thing as this:
 a = a + 5;
+
+//this works for any arithmetic operation.
