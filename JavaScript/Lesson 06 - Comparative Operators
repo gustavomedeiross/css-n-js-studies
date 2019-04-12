@@ -1,0 +1,25 @@
+==  //equal to
+
+=== //equal to, and the same primitive type 
+
+!= //different than
+
+!== //different than, and 
+
+> or < //
+
+>= or =< //
+
+Examples:
+
+3 == "3";
+>>> true
+
+3 === "3";
+>>> false
+
+3 != "3";
+>>> false;
+
+3 !== "3";
+>>> true;
