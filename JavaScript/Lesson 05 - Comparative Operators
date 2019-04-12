@@ -1,0 +1,11 @@
+==  //equal to
+
+=== //equal to, and the same primitive type
+
+!= //different than
+
+!== //different than, and 
+
+> ou < //
+
+>= ou =< //
