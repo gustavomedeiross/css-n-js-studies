@@ -2,7 +2,7 @@
 
 - string //can be set with "" or ''. 
 
-@ /n //this will break the string (just like python).
+@ /n //this will break the string (just like in python).
 
 - boolean //true or false.
 
