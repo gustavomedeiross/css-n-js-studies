@@ -1,0 +1,11 @@
++ -> sum
+- -> subtraction
+* -> multiplication
+/ -> division
+% -> modulation
+++ -> increment
+-- -> decrease
+
+
+//the order of the increment/decrease matters in some cases. For example:
+
