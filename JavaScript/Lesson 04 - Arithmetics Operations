@@ -9,3 +9,9 @@
 
 //the order of the increment/decrease matters in some cases. For example:
 
+var a = 30;
+console.log(++a); //because is incrementing a before the console.log happens
+>>> 31
+console.log(a++); //because is doing the console.log before the increment.
+>>> 30
+
