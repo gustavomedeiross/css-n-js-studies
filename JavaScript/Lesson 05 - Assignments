@@ -1,0 +1,15 @@
+Assingment (atribuição) is when you change the value of a variable based on the current value of the same variable.
+
+For example:
+
+var a = 10;
+a += 5;  //"+=" is the assignment
+console.log(a);
+>>> 15 
+
+
+this:
+a += 5;
+
+is the same thing as this:
+a = a + 5;
