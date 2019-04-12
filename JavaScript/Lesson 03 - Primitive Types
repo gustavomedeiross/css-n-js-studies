@@ -1,0 +1,11 @@
+- number //in JavaScript, there is no difference between integers and float, there is just "numbers".
+
+- string //can be set with "" or ''. 
+
+@ /n //this will break the string (just like python).
+
+- boolean //true or false.
+
+- null //it's the assurance that the variable doesn't have any value.
+
+- undefined //when you didn't assign anything to the variable.
