@@ -1,0 +1,30 @@
+Switch Case is conditional structure, with strict comparision (===).
+
+@ switch(nameOfTheVariable){
+  case value1:
+    command block,
+    break;
+  
+  case value2:
+    command block;
+    break
+  default:
+    command block;
+    break;
+}
+
+
+So, explaining the syntax:
+The switch will receive a variable between the parenthesis, and that variable will be the reference to our cases.
+
+Inside the switch block, there will be case "something". That "something" will be the required value for something to happen (important: the case only supports "===", so there's no way to use >, < or !=). 
+
+If the case is true, the command block will be executed, BUT, you need to put a "break;" at the end of the block, otherwise, all the next cases will be executed (even if they're not true).
+
+
+
+
+
+
+More resources:
+https://www.w3schools.com/js/js_switch.asp
