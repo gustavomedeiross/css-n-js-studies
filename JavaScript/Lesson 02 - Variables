@@ -1,0 +1,5 @@
+@ var nameOfTheVariable; //this will only declare the variable. This means that the current value inside the variable is "undefined".
+
+@ nameOfTheVariable = value; //you can assign values to the variable using "=". You need to declare the variable first! (Or assign already when you declared it).
+
+JavaScript is case sensitive - and normally a variable will start with lowercase.
