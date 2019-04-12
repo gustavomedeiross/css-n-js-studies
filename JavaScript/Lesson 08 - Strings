@@ -1,0 +1,15 @@
+If you concatenate (+) a string with a number, the number will turn into a string.
+example:
+
+"Hello World" + 5;
+>>> "Hello World 5"
+
+The only operation that can be done with a string is "+" - everything else will return NaN. 
+But if the content of the strings are only numbers and you do operations with them (excluding +, because it will concatenate), the operations will happen. 
+example:
+
+"5" - "3";
+>>> 2
+
+"10" + "5";
+>>> "105"
