@@ -26,6 +26,6 @@ Sometimes, creating a new property with the ['newProp'] can be more useful than 
 
 let student= {name: 'Gustavo', age: 19};
 let newProp = 'language';
-let student[newProp] = 'JavaScript';  //this will use the string inside "newProp" as the new object name.
+let student[newProp] = 'JavaScript';  //this will use the string inside "newProp" as the new object name. You can't do this if you use the "." method.
 
 
