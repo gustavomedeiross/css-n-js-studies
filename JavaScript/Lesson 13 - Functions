@@ -53,4 +53,4 @@ anonymousFunctionEx();
 >>> 'Hello, World'         
 
 
-Crazy right? In JavaScript, you can store a function to a variable, and use that variable name as the name of the function!
+Crazy right? In JavaScript, a function can be a variable!
