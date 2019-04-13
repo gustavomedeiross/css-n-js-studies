@@ -8,6 +8,8 @@ Structure/syntax:
 or                                         //those two methods are used to create properties
 @ nameOfTheVariable.property = value;
 
+
+@ nameOfTheVariable = new Object();
 ---------------------------------------------------------------------------
 Example:
 
