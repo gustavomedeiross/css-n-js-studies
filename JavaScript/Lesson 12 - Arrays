@@ -17,3 +17,10 @@ array1[0];
 >>> 'Gustavo'
 array1.length;
 >>> 2
+
+
+Reading arrays with "for":
+
+for(var i in arrayName){} //the "i" will be the index.
+
+for(var i of arrayName){} //the "i" will be the arrays values.
