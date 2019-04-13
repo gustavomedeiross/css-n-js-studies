@@ -1,9 +1,9 @@
--------------------------------------------------------------------------------------------------------------------------------------------
 You can create anonymous functions. This mean that the function does not have a name (but can be stored to a variable, if needed). Example:
 
 function(){
   return 5;
 }
+
 //this function will not be executed because there's no way to call it, UNLESS you use it related to a variable or method.
 
 Like this:
