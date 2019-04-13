@@ -1,0 +1,56 @@
+Main function syntax/structure in JavaScript:
+
+//creates the function
+@ function nameOfTheFunction(arguments){                       
+  command block;  
+}
+
+//executes the function
+@ nameOfTheFunction(arguments);                             
+
+You only need to set the arguments if it's needed.
+
+--------------------------------------------------------------------------------------------
+
+You can use the keyword "return" to make the function return a value to a variable. Example:
+
+function returnExample(){
+  return 5;
+}
+returnExample();
+>>> 5
+
+---------------------------------------------------------------------------------------------
+
+How arguments work:
+
+function ratio(argument1, argument2){
+  let grade1 = argument1;
+  let grade2 = argument2;
+  let media = (grade1 + grade2) / 2;
+  return media;
+}
+
+ratio(10, 5);
+>>> 7.5
+
+The arguments will replace the values in the function structure (with the same name).
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+You can create anonymous functions. This mean that the function does not have a name (but can be stored to a variable, if needed). Example:
+
+function(){
+  return 5;
+}
+//this function will not be executed because there's no way to call it, UNLESS you use it related to a variable or method.
+
+Like this:
+
+var anonymousFunctionEx = function(){
+  return 'Hello, World';
+}
+anonymousFunctionEx();
+>>> 'Hello, World'         
+
+
+Crazy right? In JavaScript, you can store a function to a variable, and use that variable name as the name of the function!
