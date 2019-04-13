@@ -1,0 +1,21 @@
+In JavaScript, almost everything is an object.
+
+Structure/syntax:
+
+@ nameOfTheVariable = {property1: value, property2: 'value2}; //creates the object
+
+@ nameOfTheVariable['property'] = value;
+or                                         //those two methods are used to create properties
+@ nameOfTheVariable.property = value;
+
+---------------------------------------------------------------------------
+Example:
+
+student= {name: 'Gustavo', age: 19};
+
+student.name;
+>>> 'Gustavo'
+
+student.language = 'JavaScript';
+console.log(student);
+>>> {name: 'Gustavo', age: 19, language: 'JavaScript'};
