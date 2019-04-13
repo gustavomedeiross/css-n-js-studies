@@ -54,3 +54,18 @@ anonymousFunctionEx();
 
 
 Crazy right? In JavaScript, a function can be a variable!
+
+--------------------------------------------------------------
+
+Another example:
+
+var functionEx = function(){
+  return "Hello!";
+}
+
+console.log(functionEx);
+>>> function(){
+  return "Hello!";
+}
+
+//What happened? You stored the function to the variable, but didn't executed "()". So, it will console.log the function itself! 
