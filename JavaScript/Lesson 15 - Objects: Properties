@@ -1,4 +1,4 @@
-In JavaScript, almost everything is an object.
+In JavaScript, almost everything is an object. The property is basically a variable that is inside the object.
 
 Structure/syntax:
 
@@ -11,7 +11,7 @@ or                                         //those two methods are used to creat
 ---------------------------------------------------------------------------
 Example:
 
-student= {name: 'Gustavo', age: 19};
+let student= {name: 'Gustavo', age: 19};
 
 student.name;
 >>> 'Gustavo'
@@ -19,3 +19,13 @@ student.name;
 student.language = 'JavaScript';
 console.log(student);
 >>> {name: 'Gustavo', age: 19, language: 'JavaScript'};
+
+---------------------------------------------------------------------------
+
+Sometimes, creating a new property with the ['newProp'] can be more useful than .newProp (especially with more advanced stuff), because you can create the property using other variable. Example:
+
+let student= {name: 'Gustavo', age: 19};
+let newProp = 'language';
+let student[newProp] = 'JavaScript';  //this will use the string inside "newProp" as the new object name.
+
+
