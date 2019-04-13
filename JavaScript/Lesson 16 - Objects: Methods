@@ -1,0 +1,32 @@
+A method is basically a function inside an object. 
+
+Example:
+
+//with anonymous functions
+
+let student = {
+  name: 'Gustavo';
+  study: function(){command block}
+}
+
+to call the method: student.study();
+
+
+--------------------------------------or-------------------------------------------------------
+
+
+//with normal functions (not anonymous)
+
+function studyFunc(){command block};
+
+let student = {
+  name: 'Gustavo'
+  study: studyFunc();  //the function "studyFunc()" is already being called. If the value of "study:" was just "studyFunc" withoud the parenthesis, you would need to use the parenthesis when calling the method.
+}
+
+to call the method: student.study; //if you put "student.study()" it would return an error, because the function is already called inside the object.
+
+
+
+
+
