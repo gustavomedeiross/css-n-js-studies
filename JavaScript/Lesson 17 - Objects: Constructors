@@ -1,0 +1,6 @@
+A constructor function is a function that creat/return an object. The action to create a new object based on a model of an object is called "instantiate object". 
+
+w3schools's tip: It is considered good practice to name constructor functions with an upper-case first letter.
+
+There's two ways of creating constructor functions in JavaScript:
+1º:
