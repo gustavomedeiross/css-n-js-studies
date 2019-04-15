@@ -1,1 +1,14 @@
-#empty
+For this lesson we will use this example:
+var date = new Date('mar 13 2000');
+
+Date methods:
+
+date.getFullYear();
+>>> 2000
+
+
+date.getDate();
+>>> 13
+
+date.getDate(); //this method returns the day of the week (in this case, monday) - it return a number, with 0 being sunday and 6 being saturday.
+>>> 1
