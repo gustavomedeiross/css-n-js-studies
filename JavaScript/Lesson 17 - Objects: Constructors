@@ -25,6 +25,6 @@ function Constructor(arguments){
   this.property2 = argument2
 }
 
-let newObj = new Constructor;
+let newObj = new Constructor;   //when using this method, you need to instantiate using "new"
 
 
