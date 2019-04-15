@@ -6,9 +6,32 @@ Date methods:
 date.getFullYear();
 >>> 2000
 
+date.getMonth(); //returns a number, with 0 being january and 11 being december
+>>> 2
 
 date.getDate();
 >>> 13
 
 date.getDate(); //this method returns the day of the week (in this case, monday) - it return a number, with 0 being sunday and 6 being saturday.
 >>> 1
+
+date.getHours(); //becase the schedule is 0 - even if there was minutes, it would return 0.
+>>> 0
+
+date.getMinutes(); //same with "getHours();" - it doesn't consider the seconds
+>>> 0
+
+date.getSeconds(); //doesn't consider milliseconds
+>>> 0
+
+date.getMilliseconds();
+>>> 0
+
+
+date.getTime();  //returns the amount of milliseconds from 12/31/1969 16:00 GMT-0800
+>>> 952916400000
+
+
+-------------------------------------------------------------------------------------------------
+
+setDate(), setHours(), [...] - it have all the methods ahead, but the difference is that you're setting the value.
