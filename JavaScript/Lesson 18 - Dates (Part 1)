@@ -22,12 +22,12 @@ console.log(date);
 
 You can set a new date with strings too:
 
-var date = new Date('mar 13 2013');
+var date = new Date('mar 13 2013') or ('03/13/2013') or ('03-13-2013');
 
-or 
 
-var date = new Date('03/13/2013');
 
-or 
+If you set just one date using the string method:
 
-var date = new Date('03-13-2013');
+var date = new Date('1969')
+console.log(date);
+>>> Tue Dec 31 1968 21:00:00 GMT-0300 (Brasilia Summer Time)  //it will return one day before, 16:00 GMT-0800
