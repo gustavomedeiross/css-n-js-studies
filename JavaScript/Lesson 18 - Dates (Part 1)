@@ -1,0 +1,32 @@
+To create dates, you need to create a variable that will receive that value (the date itself)
+
+@ var date = new Date();  //it will get the current date, schedule and timezone.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+@ var date = new Date(year, month, day, hours, minutes, seconds, milliseconds); //you can set a custom date - you don't need to set all arguments.
+
+In JavaScript dates, the months are an array, starting from 0 (january) to 11 (december).  //using the method above.
+
+------------------------------------------------------------------------------------------------------------------------
+
+If you set just one argument, JS will interpretate like just milliseconds, starting from 12/31/1969 (16:00) GMT-0800.
+
+So for example:
+
+var date = new Date(1000 * 60 * 60 * 24 * 10);
+console.log(date);
+>>> Sat Jan 10 1970 21:00:00 GMT-0300 (Brasilia Standard Time)
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+You can set a new date with strings too:
+
+var date = new Date('mar 13 2013');
+
+or 
+
+var date = new Date('03/13/2013');
+
