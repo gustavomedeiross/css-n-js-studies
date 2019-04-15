@@ -1,0 +1,4 @@
+alert('Hello World'); //this function makes a alert window on the site "this page says".
+
+prompt('message', 'text inside the input box');  //this function makes a alert window, but with a input box to the client to use it
+
