@@ -1,0 +1,36 @@
+Local scope (let and const) - The variable/constant exists just inside the block (inside a if, inside a for, or even inside a random block "{}").
+
+Global scope (var) - The variable/constant exists in all elements (So, if is declared inside a block "{}", is going to exist outside of that block too).
+
+!IMPORTANT: Functions have a scope so closed that even var's don't have a global scope (You can't acess a variable declared inside a function).
+
+
+!IMPORTANT: ALWAYS try to use let and const, because is easier to find bugs in your code!
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+The "let" works just like "var". The main difference is that the let has a local scope, and the var has a global scope.
+
+@ let = nameOfTheVariable;
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+The constants in JavaScript have a local scope. You CAN assign new values to the constant, but never change the values that are already there.
+
+@ const = nameOfTheConstant;
+
+Examples:
+const n1 = 2;
+n1 = 3;
+>>> error (you can't change the values that are already in the constant - reassign).
+
+const students = ['Gustavo', 'Letícia'];
+students.push('Maria'); //this method appends a new item to the array.
+console.log(students);
+>>> ['Gustavo', 'Letícia', 'Maria']
+
+//the second example works because the with constants, you CAN add new values. You just can't change the original ones - you can't remove them.
+
+
+
+
