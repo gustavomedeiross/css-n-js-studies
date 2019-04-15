@@ -3,4 +3,28 @@ A constructor function is a function that creat/return an object. The action to 
 w3schools's tip: It is considered good practice to name constructor functions with an upper-case first letter.
 
 There's two ways of creating constructor functions in JavaScript:
-1º:
+
+1º: Return
+
+function Constructor(arguments){
+  return{
+    property1: argument1,
+    property2: argument2
+    }
+}
+
+let newObj = Constructor(arguments);
+
+
+
+
+2º: This and new
+
+function Constructor(arguments){
+  this.property1 = argument1,    //in this case, you can use both "," or ";"
+  this.property2 = argument2
+}
+
+let newObj = new Constructor;
+
+
