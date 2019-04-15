@@ -28,3 +28,6 @@ or
 
 var date = new Date('03/13/2013');
 
+or 
+
+var date = new Date('03-13-2013');
