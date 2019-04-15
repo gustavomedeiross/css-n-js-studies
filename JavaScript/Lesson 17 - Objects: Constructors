@@ -27,4 +27,6 @@ function Constructor(arguments){
 
 let newObj = new Constructor;   //when using this method, you need to instantiate using "new"
 
+//in the first case you don't need to use the "new", because it's already returning the object - so the return makes the role of new
+
 
