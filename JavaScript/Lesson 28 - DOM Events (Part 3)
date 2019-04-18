@@ -1,0 +1,32 @@
+There's two more ways of making a DOM Event - In this lesson, we will learn how to make a DOM event entirely through JavaScript.
+
+----------------------------------------------------------------------------------------------
+
+First Way: 
+
+<h1>Click me!</h1>
+
+let h1 = document.getElementsByTagName('h1')[0];
+h1.onclick = changeH1; 
+
+function changeH1(){
+  h1.innerHTML = 'New h1!';
+}
+
+//you don't need to set the "()" on the functions, otherwise, the functions will trigger instantly - even if the Event doesn't happened yet.
+
+
+----------------------------------------------------------------------------------------------
+
+Second way: (addEventListener)
+
+<h1>Click me!</h1>
+
+let h1 = document.getElementsByTagName('h1')[0];
+h1.addEventListener('click', changeH1);
+
+function changeH1(){
+  h1.innerHTML = 'New h1!';
+}
+
+----------------------------------------------------------------------------------------------
