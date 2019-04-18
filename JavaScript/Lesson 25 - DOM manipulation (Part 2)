@@ -1,1 +1,34 @@
-#empty
+You can change, create and remove attributes of html elements in JavaScript. 
+
+In JavaScript, the element is the parent and the attributes are the children.
+
+-------------------------------------------------------------------------------------------------------
+
+HTML: <p class='paragraph' myAtt='Gustavo'>This is my paragraph!</p>
+
+p.className = 'p1';  //this will change the value of the attribute (it will change the class name).
+p.style.backgroundColor = 'red'; //creates a new attribute to change the background-color.
+
+
+There's a important thing to know - using this "object" way, you can JUST change/create/remove the "classic" attributes. You CAN'T change the "myAtt" attribute because it's not a classic attribute (like class, style, id, etc).
+
+p.myAtt = 'newValue';  //this just doesn't work.
+
+--------------------------------------------------------------------------------------------------------
+
+To get the values of the attributes (like myAtt), you will need to use a method:
+
+p.getAttribute('myAtt')
+>>> 'Gustavo'
+
+
+
+
+to create/change the values of those attributes:
+
+p.setAttribute('myAtt', 'newValue'); //this changes the value in the attribute - CHANGES, because this attribute already exists.
+
+p.setAttribute('newAtt', 'value'); //this will create a new attribute, because "newAtt" doesn't exists.
+
+---------------------------------------------------------------------------------------------------------
+
