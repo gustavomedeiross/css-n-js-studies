@@ -1,0 +1,7 @@
+As already said, almost everything in JavaScript is an object. 
+
+The most important object in JavaScript is the object "Window". Every native method or object in a child of the object window (But you don't need to declare it everytime).
+
+Example:
+
+console.log('Hello, World!') === window.console.log('Hello, World!');   //both are the same thing
