@@ -1,0 +1,30 @@
+You can change the content of HTML elements using these properties:
+
+@ .innerHTML
+@ .innerText
+@ .textContent
+----------------------------
+
+the innerHTML sets the value of an element "directly" on the HTML. For example:
+
+let h1 = document.getElementsByTagName('h1')[0];
+h1.innerHTML = '<h2> Now I'm a h2!</h2>';
+
+>>> the output will change the actual tag - the <h1> will turn into a <h2> element.
+
+---------------------------------------------------------------------------------------
+
+both innerText and textContent can change just the content itself, not the tag (like innerHTML). Example:
+
+let h1 = document.getElementsByTagName('h1')[0];
+
+
+h1.innerText = '<h2> Now I'm a h2!</h2>';
+h1.textContent = '<h2> Now I'm a h2!</h2>';
+
+>>> the output will put the <h2> in the actual content - the html tag will still be a <h1>  //on both innerText and textContent.
+--------------------------------------------------
+but what is the difference between both, then?
+
+the innerText can just "see" the values that shows on the screen, and textContent can see all the content avaliable on the HTML document. This means that if an element have "display: none", the innerText will not be able to see it, while textContent will see it.
+
