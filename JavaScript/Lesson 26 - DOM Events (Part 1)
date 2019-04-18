@@ -1,4 +1,4 @@
-There's special attributes in HTML to do things in JavaScript - those are called "DOM Events".
+There's special attributes in HTML to do things in JavaScript - those are called "DOM Events". There are a tone of different DOM events - like onclick, onmouseover, onmouseout, oninput, etc.
 
 For example (onclick):
 
@@ -6,7 +6,7 @@ For example (onclick):
 
 When someone clicks the h1 element on the page, the event will happen and trigger the console.log (in this case).
 
-
+---------------------------------------------------------------------------------------------------------------------
 
 Inside the event, you can set any function or method (in this case was console.log, but you can actually create a new function).
 
@@ -18,5 +18,11 @@ Example:
   }
 </script>
 
-<h1 onmouseover='eventHappened();'></h1>
+<h1 onmouseover='eventHappened();'>Mouse over me!</h1>
+
 -------------------------------------------------------------------------------------------------------------------------------
+
+<h1 onclick='console.log(this)'>Click me!</h1>
+
+//the console.log will be the element itself, because "this" is in html - "<h1 onclick='console.log(this)'>Click me!</h1>".
+
