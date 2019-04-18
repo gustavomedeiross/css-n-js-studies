@@ -1,0 +1,27 @@
+One of the most important DOM Events is the "onload" event. 
+
+Because the html loads on a "linear" way, so for example:
+
+<h1>This will load before the p</h1>
+<p>This will load after the h1</p>
+
+------------------------------
+
+This can cause some problems if you're not careful. For example:
+
+<script>
+  let h1 = document.getElementsByTagName('h1')[0];
+  h1.innerHTML = 'new h1';
+</script>
+
+<h1>Original h1</h1>
+
+
+//this code above will return a error - because the <h1> is not loaded yet to get it in the <script>.
+
+
+
+You can have two solutions: 
+1- Move the script code all the way down inside the body tag (So it will never load before)
+
+2- Set a "onload" event on the body tag, and ALL the JavaScript code will happen inside the "onload" function. This makes all the <body> load first, to just after that, start running the JavaScript.
