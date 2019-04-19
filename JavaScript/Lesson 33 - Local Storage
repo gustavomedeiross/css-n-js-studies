@@ -1,9 +1,21 @@
 The localStorage is a property that makes the website save a value in the computer - in the Hard Drive. So this means that even if you turn off your PC, the value will be stored, and can be accessed in the future.
 
-the localStorage has 3 methods:
+the localStorage have 4 methods:
 
 @ localStorage.setItem('keyWord', 'value'); //this will set/create the keyWord and the value, and then stores it.
 
 @ localStorage.getItem('keyWord'); //this gets the value that's in the PC memory.
 
 @ localStorage.removeItem('keyWord'); //this, removes the stored value and keyWord from your memory.
+
+@ localStorage.clear(); //this will remove all the keyWords that can be stored from that site - it cleans your pc.
+
+-------------------------------------------------------------------------------------------------------------------
+
+Important things:
+
+You can just store strings (so JSON will help a lot).
+
+The value will be stored by domain - this means that you can only "getItem()" in the same domain - you can't use different domains (even if it's the same keyword). 
+
+The value is stored in the PC - so if you access the site with another PC, the value will not be stored.
