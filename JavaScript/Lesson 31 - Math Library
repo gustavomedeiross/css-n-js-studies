@@ -1,0 +1,19 @@
+@ Math.PI; //returns the pi number.
+
+@ Math.E; //returns the euler number.
+
+
+@ Math.pow(base, exponent); //makes a exponent calculus.
+
+@ Math.sqrt(radicand, degree); //makes a square root calculus.
+
+
+@ Math.round(floatNumber); //rounds a number.
+
+@ Math.floor(floatNumber); //rounds a number to the floor (1.99 >>> 1);
+
+@ Math.ceil(floatNumber); //rounds a number to the ceil (1.000001 >>> 2);
+
+
+@ Math.random(); //generates a random number between 0 and 1 (so it will never be 0 or 1, just between).
+
