@@ -1,0 +1,6 @@
+You can easily access the parent element or the children elements.
+
+@ element.parentElement;  //returns the parent Element
+
+@ element.children;  //returns an array of elements (because is you can have more than one children).
+
