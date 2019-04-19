@@ -1,0 +1,26 @@
+JSON is a representation of a JavaScript object.
+JSON = JavaScript Object Notation.
+
+The JSON is really useful because sometimes you can't just send an object to the server (the backend). You will need to send a string, that is a object. Let's see how this works:
+-----------------------------------------------------
+The JSON has two methods
+
+@ JSON.stringfy(object);
+ 
+Turns an object into a JSON string object. Example:
+
+let obj = {name: 'Gustavo', idade:19};
+obj = JSON.stringfy(obj);
+console.log(obj);
+>>> '{"nome":"Gustavo", "idade": 19}'
+  
+------------------------------------------------------
+
+@ JSON.parse(object);
+
+Turns a JSON string object into an object. Example:
+
+let obj = '{"name": "Gustavo", "idade": 19}'
+obj = JSON.parse(obj)
+console.log(obj);
+>>> {name: 'Gustavo', idade:19};
