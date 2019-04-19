@@ -2,7 +2,9 @@ JSON is a representation of a JavaScript object.
 JSON = JavaScript Object Notation.
 
 The JSON is really useful because sometimes you can't just send an object to the server (the backend). You will need to send a string, that is a object. Let's see how this works:
+
 -----------------------------------------------------
+
 The JSON has two methods
 
 @ JSON.stringfy(object);
