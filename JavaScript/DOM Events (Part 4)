@@ -1,0 +1,17 @@
+@ event.target;  //the "target" returns the element where the event is happening. (But just works with the .addEventListener method.
+
+Example:
+
+<h1>Click Me!</h1>
+<script>
+  let h1 = document.getElementsByTagName('h1')[0];
+  h1.addEventListener('click', changeH1);
+  
+  function seeTheEvent(event){
+    console.log(event);
+    console.log(event.target);
+    }
+</script>
+
+>>> MouseEvent (etc..) //this is the console.log(event) - it will show the event itself.
+>>> <h1>Click Me!</h1> //this is the console.log(event.target) - it will show the element that the event happened.
