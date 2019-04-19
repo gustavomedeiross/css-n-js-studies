@@ -1,0 +1,16 @@
+@ setTimeout (method, timeMilliseconds); //this will make a timeout, like a little time for something to happen (just one time).
+
+-----------------------------
+
+@ setInterval (method, timeMilliseconds); //this will make a interval, that is going to happen continuously, until you stop it (if you stop it).
+
+To make the interval stop it, you need to assingn the interval to a variable, so the interval has a "name".
+And then, you call this method:
+
+@ clearInterval(intervalVariable);
+
+Example:
+
+let inteval1 = setInterval(console.log('Stop me'), 1000); //it will happen every second.
+
+clearInterval(interval1); //this makes the interval stop.
