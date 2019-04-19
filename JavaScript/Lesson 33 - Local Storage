@@ -1,0 +1,9 @@
+The localStorage is a property that makes the website save a value in the computer - in the Hard Drive. So this means that even if you turn off your PC, the value will be stored, and can be accessed in the future.
+
+the localStorage has 3 methods:
+
+@ localStorage.setItem('keyWord', 'value'); //this will set/create the keyWord and the value, and then stores it.
+
+@ localStorage.getItem('keyWord'); //this gets the value that's in the PC memory.
+
+@ localStorage.removeItem('keyWord'); //this, removes the stored value and keyWord from your memory.
