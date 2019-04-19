@@ -1,3 +1,5 @@
 Important keyword for wrapping the word inside a container:
 
-@ worwrap: break-word;
+@ word-wrap: break-word; //it will make the text break (and don't overflow).
+
+@ white-space: nowrap; //it will make the text not break (it can overflow)
