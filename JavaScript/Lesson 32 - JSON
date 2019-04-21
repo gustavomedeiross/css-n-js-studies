@@ -3,16 +3,16 @@ JSON = JavaScript Object Notation.
 
 The JSON is really useful because sometimes you can't just send an object to the server (the backend). You will need to send a string, that is a object. Let's see how this works:
 
------------------------------------------------------
-
 The JSON has two methods
 
-@ JSON.stringfy(object);
+-----------------------------------------------------
+
+@ JSON.stringify(object);
  
 Turns an object into a JSON string object. Example:
 
 let obj = {name: 'Gustavo', idade:19};
-obj = JSON.stringfy(obj);
+obj = JSON.stringify(obj);
 console.log(obj);
 >>> '{"nome":"Gustavo", "idade": 19}'
   
