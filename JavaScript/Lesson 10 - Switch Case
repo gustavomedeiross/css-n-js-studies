@@ -1,4 +1,4 @@
-Switch Case is conditional structure, with strict comparision (===).
+Switch Case is conditional structure, with strict comparison (===).
 
 @ switch(nameOfTheVariable){
   case value1:
