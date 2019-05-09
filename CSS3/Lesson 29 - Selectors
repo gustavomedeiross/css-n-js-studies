@@ -1,1 +1,43 @@
-#empty
+
+
+@ *{} //selects all the elements on the page - all the tags.
+
+
+@ selector1, selector2 {} //the comma is used to apply the style to more than 1 selector.
+
+
+@ element1 element2 {} //selects all the element2 that are inside an element1 (doesn't matter if it's a children or not - it can be a grandchildren for example).
+
+
+@ element1 > element2 {} //selects all the element2 who's parent is element1 {now, it will select only the children).
+
+
+@ element1 + element2 {} //selects all the element2 that comes right after an element1 - it needs to be on the same level, so it can't be a children or parent. Other thing to notice: it will select just one element2 at occurence, so, if there's: "<element1><element2><element2>" - it will select just the first element2.
+
+
+@ element1 ~ elemnt2 {} //selects all the element2 that comes after an element1 (on the same level) - the difference from "+" is that this one will select every element2 after, it doesn't matter if it's right after element1 or not.
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+@ elementX[attribute] {} //this will get all the elementX that have this attribute - the value of the attribute doesn't matter in this case.
+
+
+@ elementX[attribute='value1'] {} //this will get all the elementX that have the attribute with 'value1'. 
+
+
+@ elementX[attribute~='random'] {} //this will get all the elementX the value of the attribute has the word "random" in it.
+
+
+@ elementX[attribue^='va'] {} //this will get all the elementX which the value of the attribute starts with "va" -(for example "value").
+
+
+@ elementX[attribute$='1'] {} //this will get all the elementX which the value of the attribute ends with "1".
+
+
+@ elementX[attribute*='lu'] {} //this gets all the elementX which has "lu" in any part of the value, for example: "vaLUe".
+
+
+
+!IMPORTANT: All the selectors ahead (with attributes) can be done without the "elementX"... So any element that haves a specific attribute or attribute value will be selected.
