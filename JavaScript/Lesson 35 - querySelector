@@ -1,7 +1,7 @@
 You can use the command "querySelector" to search for an element in html using basically the same syntax as you would use in CSS - but in JavaScript.
 
 
-@ document.querySelector('selector'); //returns a single element
+@ document.querySelector('selector'); //returns a single element.
 
 @ document.querySelector('selector'); //returns an array (NodeList) of elements.
 
@@ -9,4 +9,7 @@ You can use the command "querySelector" to search for an element in html using b
 //you'll need to use quotes ('') to use the selector.
 
 
-*If you want to check how to use the selectors of CSS properly, you can take a look at the Lesson 
+If you use querySelector(); and there's more than 1 element that "respect the rules" of your selection, the method will return the first one.
+
+
+*If you want to check how to use the selectors of CSS properly, you can take a look at the Lesson 29 of CSS - "Selectors".
