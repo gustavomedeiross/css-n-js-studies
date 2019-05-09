@@ -1,0 +1,11 @@
+Variables are very useful to "template" your site. So, if you have to change the colors (for example), you can just change the value of the variable, and all the elements that received the variable as the value will change the value too. - Works just like any other programming language variable.
+
+- You need to set the value inside the :root/html element (to be global), but you can create "locally" if you want too:
+
+@ :root{
+  --variableName: value;
+}
+
+to use the variable:
+
+@ property: var(--variableName); //now, the "property" will have the value of the variable.
