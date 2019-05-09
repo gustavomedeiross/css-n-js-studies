@@ -1,0 +1,38 @@
+Pseudo elements are basically a part of a total element. So, for example, you can change just the first letter of an element.
+
+In CSS, to represent pseudo elements, we use "::". So, let's see an example of the first-line and first-letter pseudo element:
+
+@ p::first-line {style}  //this will change the style of the first line of any paragraph on the page.
+
+@ p::first-letter {style} //styles the first letter of any paragraph.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+There are a lot of pseudo elements, but the most important ones certanly are:
+
+@ htmlElement::before
+@ htmlElement::after
+
+(The before/after are basically the same thing, but one goes before the element and the other goes after).
+
+
+
+Both of these pseudo elements can make a tone of stuff, like hamburguer buttons (mobile menu buttons), setting images for lists, header animations, etc. 
+
+To make these work, you always have to create a content and the display. So, here's an example:
+
+li::before{
+  content: '';
+  display: block;
+}
+
+Now, you can do whatever you want with the pseudo element.
+
+-----------------------------------------------------------
+
+One important thing to know, is that the pseudo elements are like children of the elements too, so if you set them as "position: absolute", and the actual element have "position: relative" (for example), the pseudo element will be absolute to the element.
+
+
+
+More resources:
+https://www.youtube.com/watch?v=zGiirUiWslI
