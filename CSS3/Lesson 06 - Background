@@ -7,7 +7,7 @@ These are a little bit more tricky:
 
 @ background-attachment: scroll|fixed|local|initial|inherit; //this property sets how the background image will behave.
 
-@ background-clip: border-box|padding-box|content-box|initial|inherit; //this property sets what areas of the box-sizing the background will be (padding or not, border or not, just the conten, etc).
+@ background-clip: border-box|padding-box|content-box|initial|inherit; //this property sets what areas of the box-sizing the background will be (padding or not, border or not, just the content, etc).
 
 @ background-origin: padding-box|border-box|content-box; //this property sets where the background will start (it's always - if the position is default - from the upper left corner, but can be from the padding, the border, or just the content).
 
@@ -15,7 +15,7 @@ These are a little bit more tricky:
 
 @ background-repeat: repeat|no-repeat|repeat-x|repeat-y|initial|inherit; //this will say if the background can repeat to cover all the space that is remaining or not (or only horizontally - x - or vertically - y).
 
-@ background-size: auto|lenght|cover|contain|initial|inherit; //specifies the size of the background image. the values are a little bit more complicated, as position is. so, here is the link: https://www.w3schools.com/cssref/css3_pr_background-size.asp
+@ background-size: auto|length|cover|contain|initial|inherit; //specifies the size of the background image. the values are a little bit more complicated, as position is. so, here is the link: https://www.w3schools.com/cssref/css3_pr_background-size.asp
 
 @ background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit; // SHORTHAND
 
