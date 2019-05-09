@@ -1,0 +1,15 @@
+Transform is very useful for animations in CSS. Basically it will change some feature of the element.
+
+@ transform: rotate(XDeg); //this will rotate the element - If you set a positive number, it will rotate clockwise, if you set a negative number, it will rotate anticlockwise - It uses degrees.
+
+
+
+@ transform: scale(X); //this will change the scale of the element. So you can make an element twice as bigger (using 2) or half of the size (using 0.5) for example.
+
+You can set scale(x, y) - this change vertically and horizontally 
+Or you can use scaleX(); | scaleY();
+And scale3d(x, y, z); - this will scale in 3 dimensions.
+
+
+
+@ transform: skew(XDeg); //turns the element into a parallelogram. You can set 2 arguments, with one being the X and the other being the Y.
