@@ -1,0 +1,12 @@
+The Calc function basically does math for you. 
+
+@ width: calc(x - y);
+
+For example, if you want to set the height to 100%, but - 500px: you can do that using the calc Function
+
+height: calc(100% - 500px).
+
+!IMPORTANT - The display "inline" and "inline-block" have a spacing with 4px. So it will be always 4px bigger than a block element, for example. You can use the calc() to resolve this:
+
+width(100% - 4px);
+
