@@ -1,0 +1,16 @@
+Browsers don't update as fast as the languages (CSS, JavaScript). So, the browsers make available a prefix for you to use, if your command is not supported yet.
+
+For example: if transform: scale() is not available yet on the new Internet Explorer, you can use
+
+-ms-transform: scale();
+or 
+-moz-transform: scale();  //for mozilla
+or 
+-webkit-transform: scale();  //for chrome
+
+
+Those sites help you know how many browsers support your command, and caniuse shows how much % of people use that browser.
+If the usage is more than 1%, you should use the prefix for that browser.
+
+shouldiprefix.com
+caniuse.com 
