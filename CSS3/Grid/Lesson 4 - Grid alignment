@@ -7,4 +7,6 @@ Both of them have a default value of stretch. What these properties do is basica
 
 So, as they have the default value of stretch, the grid is stretched to all the container - but if you set it to flex-start (for example), ALL the grid will go to the flex-start and the size of the grid will be the required size to fill all the elements (without changing the size of them).
 
-You can use all those position Flexbox values.
+
+
+It can take all those positioning values from Flexbox elements.
