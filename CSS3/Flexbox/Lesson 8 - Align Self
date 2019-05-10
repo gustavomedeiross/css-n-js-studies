@@ -1,0 +1,4 @@
+The align-self property will let just one element behave differently from the rest of the elements inside a flexbox container.
+
+@ align-self: center; //only this element will be centered (if the container is not centered).
+
