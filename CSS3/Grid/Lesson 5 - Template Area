@@ -1,0 +1,40 @@
+The grid-template-areas is a very powerful way of templating your grid. It can be very useful for maintenance and media queries (for responsive mobile devices).
+
+@ grid-template-areas: 'template';
+
+------------------------------------
+
+Is very simple to use it. You need to set the "name" of the children of the container using this:
+
+@ grid-area: 'name1'; //this goes on one the of children, and they all need to have'em.
+
+After this, you can just template in the 'grid-template-areas:'. 
+
+-------------------------------------------------------------------
+
+Example:
+
+container{
+  grid-template-areas:                  
+  'c2 c1 c1'
+  'c2 c3 c3'                         
+  'c3 c3 c3';
+}
+
+//down there I'm assigning the names of the children to use it on the grid-template-areas.
+
+child1{
+  grid-area: 'c1';
+}
+child2{
+  grid-area: 'c2';
+}
+child3{
+  grid-area: 'c3';
+}
+
+
+//this will template the grid: so it's a grid of 3 columns and 3 rows, and the order of the elements is set on the grid-template-areas. (One of the coolest things is that it's very visual).
+
+
+
