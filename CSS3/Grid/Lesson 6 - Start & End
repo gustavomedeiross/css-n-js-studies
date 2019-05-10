@@ -1,0 +1,21 @@
+You can change the order and the rows/columns that the elements will display.
+
+So, the elements don't need to be displayed in a tabular way, with one element occupying just one row and one column.
+
+That's why you can use grid-column/grid-row (or grid-template-areas).
+
+------------------------------------------------------------------------
+
+@ grid-column: 1 / 3; //this element will go from the start of the column 1, to the end of the column 3.
+
+@ grid-row: 3 / span 1; //this element will go from the start of the row 3, and span 1 row (end of the row 4).
+
+-------------------------------------------------------------------------
+
+This is a shorthand (and easier). But you can do it on the "long way" too:
+
+@ grid-column-start: column;
+@ grid-column-end: column;
+
+@ grid-row-start: row;
+@ grid-row-end: row;
