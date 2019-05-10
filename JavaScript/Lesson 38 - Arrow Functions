@@ -1,0 +1,41 @@
+The "arrow functions" are a easier way to create anonymous functions. 
+
+@ (arguments)=>{command block;} //arrow function
+
+function(){command block;} //normal function
+
+
+---------------------------
+
+But, it's better than that:
+
+- If you function needs one argument, you can do:
+
+@ argument => {command block;}
+
+- If your function has only one line, you don't need {}:
+
+@ argument => console.log('Hello');
+
+- And if you are going to return something, using just one line, you don't need to type "return":
+
+@ argument => 'Hello'; //this is returning 'Hello'
+
+------------------------------------
+
+So, basically
+
+this
+
+function(argument){return 'Hello';}
+
+is the same as this
+
+argument => 'Hello';
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+!IMPORTANT
+
+The only problem with arrow functions is that they "don't understand" the "this" keyword. So if you need "this" on your function, you can't use arrow functions.
+
