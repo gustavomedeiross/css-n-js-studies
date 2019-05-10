@@ -1,0 +1,37 @@
+The grid display is similar to Flexbox in some aspects, but the main difference is that it haves columns and rows at the same time.
+
+
+@ display: grid; //sets the display to CSS grid.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+@ grid-template-rows: values;   //sets the size and the amount of rows inside the container.
+ 
+@ grid-template-columns: values;  //sets the size and the amount of columns inside the container.
+
+
+The number of "sizes" inside there, will set the amount of columns || rows.
+The sizes will be the actual sizes of the columns || rows.
+
+For example:
+
+grid-template-rows: 25% 75%;
+grid-template-columns: auto auto auto;
+
+//this is going to be a grid of 2 rows (the first row will have 25% of size, and the second will have 75%), and three columns (they will have the same size - they all have "auto").
+
+-------------------------------------------------------------
+
+In grids, you can use all the measures + one more, a grid exclusive: 
+
+@ Nfr; //fractions
+
+It will divide by fractions. So, for example:
+
+grid-template-columns: 1fr 2fr 1fr;  //1st column will have 1/4, second columns will have 2/4 and the last column will have 1/4 of the total width of the container.
+
+----------------------------------------------------------------------------------
+
+You can use a shorthand to declare your grid-template:
+
+@ grid-template: rows / columns; 
