@@ -1,0 +1,15 @@
+@ animation-timing-function: values;
+
+This will set how the animation will behave (the acceleration).
+
+There's 5 timing functions:
+
+@ linear; //keeps the same acceleration
+
+@ ease; //starts and ends slowly, but gets really fast in the center
+
+@ ease-in; //starts slowly, but gets faster in the center to end
+
+@ ease-out; //starts fast, but gets slowly in the end
+
+@ ease-in-out; //starts and ends slowly, but doesn't get as fast as ease in the center
