@@ -1,0 +1,12 @@
+In the lesson 1 we learned how to create two states, using "from" and "to". A state -> B state.
+
+But you can create many more states using %. For example:
+
+@keyframes nameOfTheAnimation {
+  0% {property: value1}
+  33% {property: value2}
+  66% {property: value3}
+  100% {property: value4}
+}
+
+Now, the animation has 4 states.
