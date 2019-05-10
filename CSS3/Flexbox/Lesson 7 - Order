@@ -1,0 +1,7 @@
+You can change the order of the elements inside the container.
+
+@ order: number;
+
+The "number" is the tricky part. If you have 3 elements, they all have the "order: 0" property by default. So, if you want to put the element 2 to the end, you can just set "order: 1" on the second element, and it will go to the end, because his order is the highest. Now, let's say you want to put the same element on the start. You can just set "order: -1", because is the lowest order. 
+
+Basically, if you have the same order to all elements, they will follow the html 
