@@ -1,0 +1,8 @@
+@ animation-fill-mode: forwards|backwards|both;
+
+
+Forwards will prevent the element to go back to it's "native" styling, and after the animation is done, it's going to inherit the styles of the 100%.
+
+Backwards prevent the element to start with the style different to the 0% animation (this is just noticeable with "animation-delay").
+
+Both will do forwards + backwards.
