@@ -1,0 +1,14 @@
+You can make the animation happen more than 1 time:
+
+@ animation-iteration-count: Xtimes | infinite; 
+
+------------
+
+For example, you can make it repeat 3 times:
+
+animation-iteration-count: 3;
+
+
+Or, infinite times:
+
+animation-iteration-count: infinite;
