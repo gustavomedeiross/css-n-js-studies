@@ -1,0 +1,14 @@
+@ animation-delay: Xs;
+
+This will basically delay the start of the animation.
+
+-------
+
+But you can assign negative values to it. What will happen then?
+
+animation-duration: 6s;
+animation-delay: -3s;
+
+
+Basically, this will make the animation starts immediately, but as if 3 seconds already passsed. 
+The animation has 6 seconds total, so -3s of delay will make the animation starts at 50%.
