@@ -1,1 +1,19 @@
-#empty
+The flex shrink property lets the elements inside the container get smaller if needed - if it doesn't fit. 
+
+@ flex-shrink: 0; 
+
+The default value of flex-shrink is 1 (they will shrink). But if you set to 0, the element that has this property will not get smaller. This can cause overflow if you're not careful.
+
+--------------------------------------------------------
+
+The flex-grow property lets the elements inside the container get bigger, and fill all the space left on the element's flex-direction. So, if the container has "flex-direction: row", the flex-grow will let all the horizontal space filled up.
+
+@ flex-grow: 1; 
+
+The default value of flex-grow is 0 (so the elements will not get bigger, by default they will "respect" the default size).
+
+----------------------------------------------------------
+
+!IMPORTANT: The value of flex-grow/flex-shrink matters: it's not just 0 and 1. You can use any number.
+
+If you have, for example, 3 elements that have "flex-grow: 1", they will divide their space inside equally. But, if one of the elements have "flex-grow: 3", this element will be 3x bigger than the others, when growing. The same applies to shrink. 
