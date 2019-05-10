@@ -1,0 +1,8 @@
+The align-content changes the aligning of the extra lines that the Flexbox can create if you use wrap.
+
+So, if one element doesn't have more space to it's "natural" size and needs to be wrapped to a new line that Flexbox will create, the "align-content" will change that line alignment.
+
+@ align-content: center; //all the lines will be centered.
+
+The default value is "stretch", so that's why the wrap create those extra spaces - it stretches the lines to fill everything up.
+
