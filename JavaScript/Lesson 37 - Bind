@@ -1,1 +1,27 @@
-#empty
+The "this" keyword will have different meanings in different situations.
+
+You can use "this" in functions, to get values from different objects.
+
+But you can only use functions with "this" when you assign them to objects, making them be methods of an object.
+
+
+But every function in JavaScript has a method called "bind". What bind does is changing the value of "this" to an actual object.
+
+
+@ let bindedFunction = thisFunction.bind(object);
+
+//now, bindedFunction is the "thisFunction", but every "this" is "object" in the bindedFunction.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+Example:
+
+let a = {name: 'Gustavo', age: '19'};
+
+function logObj(){
+    console.log(this.name, this.age)
+};
+
+let logA = logObj.bind(a);
+
+logA();
