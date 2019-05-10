@@ -1,0 +1,39 @@
+All animations in CSS needs 3 steps:
+
+1- Create the animation
+2- What element will be affected
+3- How much time this animation will take
+
+The animations will go from the A state to the B state.
+
+---------------------------------------------------------
+
+Syntax:
+
+1- Create the animation
+
+//this will be outside any element (this is like declaring a function)
+
+@keyframes nameOfTheAnimation{
+  from {property: value1}
+  to {property: value2}
+}
+
+-----------
+
+2- What element will be affected
+
+//now this needs to be inside a selector
+
+element {
+  animation-name: nameOfTheAnimation; //the name of the keyframe that you created
+}
+
+------------
+
+3- How much time this animation will take
+
+element {
+  animation-name: nameOfTheAnimation; 
+  animation-duration: Xs; //the amount of seconds to go from A state to B state
+}
