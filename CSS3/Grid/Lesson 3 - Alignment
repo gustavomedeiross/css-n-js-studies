@@ -1,1 +1,12 @@
-#empty
+The justify/align items will do the alignment on the grid.
+
+Justify is horizontal alignment
+Align is vertical alignment
+
+
+@ justify-items: center;
+
+@ align-items: center;
+
+
+It can take all those positioning values from Flexbox elements.
