@@ -1,0 +1,34 @@
+Those are basically the most important thing of Flexbox.
+
+@ justify-content: value;
+
+@ align-items: value;
+
+They basically align vertically and horizontally the elements inside the Flexbox.
+
+If the flex-direction is row:
+
+justify-content is HORIZONTAL
+align-items is VERTICAL
+
+
+If the flex-direction is column:
+
+justify-content is VERTICAL
+align-items is HORIZONTAL
+
+-------------------------------------------------------
+
+Possible values for both them:
+
+@ stretch;  //default - stretches the items, so the size can change.
+@ flex-start; //starts from the start 
+@ flex-end; //starts from the end
+@ center; //centers the elements
+
+@ space-around; //the same spacing for all the elements (so it will double when there is two elements).
+@ space-evenly; //the same spacing for everything (border and other elements will have the same spacing).
+@ space-between; //the same space for all other elements, but doesn't have any spacing for the border - so it touches the border.
+
+
+
