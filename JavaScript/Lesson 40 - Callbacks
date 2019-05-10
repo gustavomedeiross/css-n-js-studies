@@ -1,0 +1,40 @@
+Callbacks are basically when you call a function as an argument to another function.
+
+Example of callback:
+
+function logA (){
+  console.log('A');
+}
+
+function logAB(callback){
+  callback();
+  console.log('B');
+}
+
+@ logAB(logA);  //this is the callback - you're passing a function as an argument to another function.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Callbacks are useful to deal with asynchronous programming.
+
+Let's say, you two functions: 
+1 - makes a request to a server, getting an array.
+2 - shows the array on the screen (DOM).
+
+The main problem is that even if you call the function 1 before the function 2 on the script, the function 2 will run before, because the function 1 is waiting for the response of the server, while function 2 not.
+
+But you need the array first to show it on the screen. So, you can use callbacks!
+Function 1 can have a callback argument, that calls function 2 after the request is done. 
+
+---------------------------------------
+
+Example:
+
+ //that's the function 1
+ 
+function requestArray(callback){                               
+  requestArrayFromTheServer();   //async, it will take an undefined amount of time
+  callback();   //now this will only run if the request is done
+}
+
+requestArray(showArray); //showArray is the function 2.
