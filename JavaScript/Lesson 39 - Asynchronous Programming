@@ -1,0 +1,13 @@
+When you're doing a request to a server, you don't know exactly how long it will take to get the response. But you know it will not be instantaneous, like the script that runs on your pc.
+
+JavaScript is Asynchronous: This means that if something is taking time to run, JS will not await that thing to happen to start running other stuff. That's what is called Asynchronous programming.
+
+Example:
+
+requestFromTheServer();  //takes some time
+console.log('Hello world'); //instantaneous - JS will run this line first than the request (even though the line comes first).
+
+
+This can cause some issues!
+
+
