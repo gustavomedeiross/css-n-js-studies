@@ -1,1 +1,39 @@
-#empty
+In JavaScript, you don't actually need to create variables using the reserved words "var", "let" and "const".
+
+You can create a variable just like that:
+
+a = 5;
+
+
+
+When you make type this, JavaScript searches for the declaration of the variable in your script. If the variable isn't declared, it will create for you, globally.
+
+-------------------------------------------------
+
+So, if you do 
+
+var a = 5;
+ 
+ and
+ 
+a = 5;
+
+it's going to be the exactly same thing (JavaScript basically "writes" a "var a" on the start of your script for you).
+
+(In both cases, if you console.log the window object, "a: 5" is going to be there).
+
+-------------------------------------------------
+
+But there's a interesting difference:
+
+If you declare "var a = 5;" inside a function, it will have a local scope (because functions have a very closed scope) - so you can't access the value outside the function. BUT, if you declare "a = 5;", you can access the variable outside the function!
+
+This happens because as I already said, JavaScript tries to find your declaration of the variable. If it doesn't have, it will create at THE START of the script (globally).
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+If you don't want this to happen - You just want to be able to use variables that you declared, you can use this (at the start of your script):
+
+'use strict';
+
+This will prevent JavaScript creating variables that you didn't!
