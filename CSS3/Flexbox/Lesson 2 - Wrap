@@ -1,0 +1,18 @@
+By default, FlexBox shrinks elements. So, if you have 2 elements that have a width, and they will not fit on the container, they will shrink by default - they're flexible.
+
+But if you don't want that to happen, what can you do? 
+
+@ flex-wrap: wrap; //it will "protect" the initial size of the element - if the container is shrinked. 
+
+But what happens if it doesn't fit anymore? - It will create a new row (if the flex-direction is row, otherwise it will create a new big column). Creating that new row, the element that doesn't fit anymore will go to this next row. It will create how many rows is needed to. 
+
+That's good, because you want to wrap the element, but you have to be careful because this can make the elements overflow.
+
+-----------------------------------------------------------
+
+@ flex-wrap: wrap-reverse; //it will do the same as "wrap", but the lines will be created upside down.
+
+This means that if the elements doesn't fit anymore, it will be above the other elements (the line 2 will be above the line 1 - in row's case) - and all the elements will be aligned to the flex-end too.
+
+
+ 
