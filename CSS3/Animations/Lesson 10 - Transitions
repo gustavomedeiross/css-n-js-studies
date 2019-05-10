@@ -1,0 +1,31 @@
+The transition property makes changes softer. (For example: hover, click, a JavaScript functions that changes the style, etc).
+
+@ transition-property: property; //sets the property that is going to be affected by the transition.
+
+
+@ transition-duration: Xs|Xms; //sets how much time it will take to that transition to happen.
+
+
+@ transition-delay: Xs|Xms; //you can set a delay for that transition.
+
+
+@ transition-timing-function: timing-function; //all those animations timing functions work here.
+
+-----------------------------------------------------
+
+SHORTHAND:
+
+@ transition: property duration delay timing-function;
+
+---
+
+If you want to set more than one property in one shorthand:
+
+@ transition: property1 duration delay timing-function, property2 duration delay timing-function (...);
+
+
+You can use this too:
+
+@ transition: all duration delay timing-function; 
+
+//this will set any property that changes to make a transition - !IMPORTANT: But isn't recommended, because when using "all", the browser needs to verify what properties are transitioning. So it's bad for performance reasons.
