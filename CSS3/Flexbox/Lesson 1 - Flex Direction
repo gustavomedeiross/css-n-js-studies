@@ -1,0 +1,14 @@
+@ display: flex; //turns the element into "flexbox mode".
+
+@ flex-direction: row|column; //this will set the "flow" of the container.
+
+//row: creates a big row, and the elements inside will fill that row - creating "columns" - the big row will have columns inside to fill it.
+
+//column: creates a big column, and the elements inside will fill that column - creating "rows" - the big column will have rows inside to fill it.
+
+--------------------------
+
+@ flex-direction: row-reverse; //works just like row, but it's going to be backwards. So, if you have the element 1, 2, 3 - it will display on the end of the row, and display 3, 2, 1.
+
+@ flex-direction: colum-reverse; //just like row-reverse, but with column.
+
