@@ -1,0 +1,5 @@
+@ animation-direction: reverse|alternate;
+
+The "reverse" will basically make the animation backwards. So it will start at 100%, and end at 0%.
+
+The "alternate" only makes sense when using the loop (animation-iteration-count), because it will starts from 0-100, and then from 100-0, and them 0-100(...).
