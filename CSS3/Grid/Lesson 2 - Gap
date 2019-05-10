@@ -1,0 +1,12 @@
+The grid gap will create a space between the elements - like a "margin".
+
+@ grid-row-gap: size; //creates space between the rows.
+
+@ grid-column-gap: size; //creates space between the columns.
+
+
+
+
+If the gap is the same on both columns and rows, you can use:
+
+@ grid-gap: size; //this will be applied to rows and columns.
