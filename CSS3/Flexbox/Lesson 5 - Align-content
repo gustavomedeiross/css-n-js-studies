@@ -4,5 +4,5 @@ So, if one element doesn't have more space to it's "natural" size and needs to b
 
 @ align-content: center; //all the lines will be centered.
 
-The default value is "stretch", so that's why the wrap create those extra spaces - it stretches the lines to fill everything up.
+The default value is "stretch", so that's why the wrap create those extra spaces - it stretches the lines to fill everything up. If you change to any other, the lines will have only the needed size to behave the element.
 
