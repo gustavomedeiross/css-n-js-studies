@@ -34,7 +34,9 @@ Example:
  
 function requestArray(callback){                               
   requestArrayFromTheServer();   //async, it will take an undefined amount of time
-  callback();   //now this will only run if the request is done
+  if(request == successful){
+    callback();   //now this will only run if the request is done
+  }
 }
 
 requestArray(showArray); //showArray is the function 2.
