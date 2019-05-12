@@ -1,0 +1,37 @@
+Another example:
+
+let promise1 = new Promise((res, rej) => res('Successful message! (1)'));  //this takes 2 seconds
+
+let promise2 = new Promise((res, rej) => res('Successful message! (2)'));  //this takes 3 seconds
+
+let promise3 = new Promise((res, rej) => res('Successful message! (3)'));  //this takes 1 second
+
+@ Promise.all([promise1, promise2, promise3])
+                                       .then(message => console.log(message));
+                                       
+-------------------------------------
+- The "Promise.all" takes an array of promises as arguments (can be functions returning promises too), and does the same thing too all the promises, returning an array of all results - in this case, an array of all "Successful message! (X)".
+
+- It doesn't matter how long each of them will take to resolve, the result will appear after ALL of them are complete, and respect the order of the array - so, in this example, the "promise3" is the fastest one, but still the last element of the array.
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+If you use the same code example, but with Promise.race:
+
+let promise1 = new Promise((res, rej) => res('Successful message! (1)'));  //this takes 2 seconds
+
+let promise2 = new Promise((res, rej) => res('Successful message! (2)'));  //this takes 3 seconds
+
+let promise3 = new Promise((res, rej) => res('Successful message! (3)'));  //this takes 1 second
+
+@ Promise.race([promise1, promise2, promise3])
+                                       .then(message => console.log(message));
+                                       
+-------------------------------------
+It will return just one result - that one being the "promise3", because it's an actual race. The first to resolve is the one to execute the "then()" (or "catch()", if rejects).
+
+
+More resources:
+
+https://www.youtube.com/watch?v=DHvZLI7Db8E&t=9s
