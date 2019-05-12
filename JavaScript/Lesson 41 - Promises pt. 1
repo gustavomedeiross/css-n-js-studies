@@ -67,3 +67,16 @@ Example:
 randomFunction()
             .then(resolveStuff, rejectStuff); 
 //the first argument is going to be called in a resolve, and the second argument is going to be called in a reject - just like "catch()". But is a better pratice to use "then()/catch()" - is easier to read.
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+More resources:
+
+https://javascript.info/promise-basics                   //*gold*
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+https://www.youtube.com/watch?v=2d7s3spWAzo
+https://www.youtube.com/watch?v=QO4NXhWo_NM
+https://www.youtube.com/watch?v=AwyoVjVXnLk
+
