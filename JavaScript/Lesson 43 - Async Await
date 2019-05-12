@@ -39,7 +39,7 @@ async execMyFunc(){
 }
 
 
-- The difference is that you can have more possibilities, and it's easier to work.
+- The difference is that is cleaner, and you can do more things with it.
 - If your promises calls "reject()", the async await will throw an error.
 
 -----------------------------------------------------------------------------------------------------------------------------
