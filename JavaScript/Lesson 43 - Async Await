@@ -1,0 +1,50 @@
+Async Await is a new type of function to work with Promises and asynchronous programming. It's a feature from ES8 (ECMAScript 2017)
+
+Works with promises because the "await" keyword will make all the function await an specific promise to fullfill, an then start running again. 
+
+Example:
+
+async function nameOfTheFunction(){
+  await function1(); //takes 2 seconds - and returns a promise
+  function2(); //this will await the function 1 to fullfill.
+}
+
+-----------------------------
+
+You can use async functions with anonymous and arrows funtions too:
+
+async function(){
+  await function1();
+  function2();
+}
+
+async ()=> {
+  await function1();
+  function2();
+}
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+The main point of Async Await is to substitue the ".then()/.catch":
+
+This:
+
+myFunction().then(anotherFunc).catch()
+
+is the same as this:
+
+async execMyFunc(){
+  await myFunction();
+  anotherFunc();
+}
+
+
+- The difference is that you can have more possibilities, and it's easier to work.
+- If your promises calls "reject()", the async await will throw an error.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+The "await" keyword just works inside async functions!
+
+More resources:
+https://javascript.info/async-await
