@@ -1,0 +1,44 @@
+Fetch is a JavaScript function to make HTTP requests from a server - it's a substitute to AJAX requests.
+Fetch will always return a promise.
+
+
+@ fetch(url).then();
+
+The resolve of that promise will return the response informations (status, headers, type, url, etc) - it's a special object (The Response Object). 
+To actually use this response (get the data from the API, etc) you'll need to use a method: 
+
+
+@ fetch(url).then((response)=>{
+  return response.json();          
+})
+
+The response object has other methods and properties too, but normally you will get the data with ".json()".
+
+This ".json()" method returns a promise too. And the resolve of that promise will be the actual JSON data (already parsed).
+
+@ fetch(url).then((response)=>{
+  return response.json();          
+}).then(data => console.log(data.property));
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Complete example:
+
+const url = 'https://api.github.com/users/mendes13';
+fetch(url).then(response => response.json()).then(data => console.log(data.name));
+
+>>> 'Gustavo Mendes de Medeiros'
+
+--------------------
+
+Using async await:
+
+const url = 'https://api.github.com/users/mendes13';
+async function githubFetch(){
+  let response = await fetch(url);
+  let data = await response.json();
+  console.log(data.name)
+}
+githubFetch();
+
+>>> 'Gustavo Mendes de Medeiros'
