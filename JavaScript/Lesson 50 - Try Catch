@@ -1,0 +1,58 @@
+Sometimes an error can happen in the middle of your processing - and if the error isn't handled, it will stop running the program. But if the error isn't that bad, this can be a problem. The whole program will stop because of a small error, and even make other errors (in a big application). That's why you'll need to handle your errors.
+
+Try catch is a way to handle those errors.
+
+Example:
+
+@ try{
+  console.log(a);
+}catch(err){
+  console.warn(err);
+}
+
+//in this case, "a" isn't declared, so it will just warn the error, but it will not stop the whole program.
+
+The syntax is very clear:
+
+try = Try to do this. If you couldn't, (...)
+catch(err) = (...) Catch the err, and do something with it.
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+"finally" will make something always run, no matter if there was errors in try or even in catch (so catch will throw an error on the program, and stop everything). 
+
+@ try{
+  console.log(a);
+}catch(err){
+  console.warn(err);
+  throw 'another error!';
+}finally{
+  console.log('This will always run!')
+}
+console.log('In this case this will not run... catch is throwing an error');
+
+//the console.log in finally runs, but the outside not.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Using throw, you can create errors too - the main point of it is to prevent specific errors that can bug your program.
+You can make your custom error. In this case, "a" can't be 5.
+
+let a = 5;
+try{
+  if(a === 5){
+    throw "a can't be 5!";
+  }
+  console.log(a); 
+}catch(err){
+  console.warn(err);
+}
+
+>>> "a can't be 5" (warn message)
+
+
+Everything that is before the "throw" will be executed, and everything after will not (in this case, console.log will not - but if it was above throw, it would console.log first).
+
+--------------------------------------------------------
+
+If you throw some error outside the "try catch", the error will not be handled, and propositally abort all the execution execution.
