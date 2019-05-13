@@ -1,0 +1,28 @@
+A ternary conditional in JavaScript is a conditional that has only one if and else statement.
+
+Example:
+
+if(conditional){
+  doThis();
+}else{
+  doThat();
+}
+
+you can reduce the code using ternary conditional:
+
+@ conditional ? doThis() : doThat();
+
+------------------------------------------------
+
+Example:
+
+function logHello(){
+  console.log('Hello');
+}
+function logWorld(){
+  console.log('World');
+}
+let a = 2;
+a == 5 ? logHello() : logWorld();
+
+>>> 'World'
