@@ -1,0 +1,59 @@
+In JavaScript there's two types of assignment: by value and by reference.
+
+The assignment by value is very simple - you basically assign the value of a variable in another one. It works with all primitive types (Number, string, boolean, etc).
+
+let a = 5;
+let b = a;
+b = 2;
+console.log(a, b);
+
+>>> 5, 2   //output
+
+-------------------
+
+let a = 'My text';
+let b = a;
+a = 'Another text';
+console.log(a, b);
+
+>>> 'Another text', 'My text'   //output
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Assignment by reference is how Arrays and Objects work. It's like making an another way to call a variable. Example:
+
+let a = [5, 2, 1];
+let b = a;
+b.push(12);
+console.log(a, b);
+
+>>> [5, 2, 1, 12] [5, 2, 1, 12]    //output
+
+
+What happened? When you assigned "b = a", you basically made a "nickname" to "a".  So everything that you change in "b" (push, change a specific value, etc), will change a too - this also happens with Objects:
+
+let a = {name: 'Gustavo', age: 19};
+let b = a;
+b.age = 30;
+console.log(a, b);
+
+>>> {name: 'Gustavo', age: 30} {name: 'Gustavo', age: 30}   //output
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Let's say you need to copy an Object, change the values of it, but keep the original one. How can you do this?
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+!IMPORTANT: 
+If you reassign b, it will not affect a values - Example:
+
+let a = [5, 2, 1];
+let b = a;
+b = [2, 1, 5]; //reassignment
+console.log(a, b);
+
+>>> [5, 2, 1] [2, 1 5]    //output - as you reassigned b, it's no longer a "new name" to "a".
+
+
