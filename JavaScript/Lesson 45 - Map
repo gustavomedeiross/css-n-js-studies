@@ -1,0 +1,25 @@
+The high-order function Map is a native method built-in all arrays, natively. 
+Map is used to create a new array based on another array. It will have the same length, but the values are going to be different - you can manipulate each value of the array.
+
+As the map method is a high-order function, it will always receive another function as an argument (and that function has an argument too - the value of the index that it's analyzing).
+
+
+let myArray = ['Gustavo', 'Paulo', 'Antonino'];
+@ let mapArray = myArray.map(value =>{
+  return value + ' is very cool';    
+});
+console.log(mapArray);
+
+>>> [ 'Gustavo is very cool', 'Paulo is very cool', 'Antonino is very cool' ]  //output
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+This would be the map method from the "inside":
+
+function newMap(callback){
+    let newArray = [];
+    this.forEach(value => newArray.push(callback(value)));
+    return newArray;
+}
+
+//and you have to assign this function as a method of the array too
