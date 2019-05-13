@@ -1,4 +1,4 @@
-The high-order function Filter is a native method built-in all arrays, natively. 
+The high-order function Filter is a native method built-in all arrays.
 The main function of it is to filter an array, based on a condition - and it returns this new, filtered, array.
 
 As the filter method is a high-order function, it will always receive another function as an argument (and that function has an argument too - the value of the index that it's analyzing).
