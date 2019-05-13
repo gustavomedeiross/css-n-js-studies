@@ -1,6 +1,39 @@
-  The high-order function Map is a native method built-in all arrays.
-  Reduce is used to get just one value, based on ALL the array values. It can be a sum, a concatenation, etc.
+The high-order function Map is a native method built-in all arrays.
+Reduce is used to get just one value, based on ALL the array values. It can be a sum, a concatenation, etc.
   
-  As the reduce method is a high-order function, it will always receive another function as an argument (and that function has an argument too - the value of the index that it's analyzing).
+As the reduce method is a high-order function, it will always receive another function as an argument (and that function has two arguments - the total value and the value of the index that it's analyzing) and the initial value of the total value.
   
   
+let myArray = [10, 5, 15];
+@ let reducedArray = myArray.reduce((total, value)=>{
+  return total + value;
+}, 0) 
+console.log(reducedArray);
+
+>>> 30   //output
+ 
+------------------------------------------------------
+
+Another example:
+ 
+let myArray = ['Gustavo', 'Letícia'];
+let reducedArray = myArray.reduce((total, value)=>{
+  return total + value
+}, 'Random text ');
+console.log(reducedArray);
+
+>>> 'Random text GustavoLetícia'  //output
+
+------------------------------------------------------
+
+This would be the map method from the "inside":
+
+function newReduce(callback, initialValue){
+  let returnableThing = initialValue;
+  this.forEach((value)=>{
+    returnableThing = callback(returnableThing, value);
+    })
+  return returnableThing;
+}
+
+//and you have to assign this function as a method of the array too
