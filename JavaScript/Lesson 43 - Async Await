@@ -44,6 +44,18 @@ async execMyFunc(){
 
 -----------------------------------------------------------------------------------------------------------------------------
 
+You can chain promises way cleanear:
+
+async function doThis(){
+  let value1 = await promise1; //if the resolve returned a value, it would be assigned to "value1"
+  let value2 = await value1; //if value1 returned a promise too
+  let value3 = await value2; //and so on
+  console.log(value3);
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
 The "await" keyword just works inside async functions!
 
 More resources:
