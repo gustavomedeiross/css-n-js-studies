@@ -41,8 +41,23 @@ console.log(a, b);
 
 -----------------------------------------------------------------------------------------------------------------------------
 
-Let's say you need to copy an Object, change the values of it, but keep the original one. How can you do this?
+Let's say you need to copy an Object/Array, change the values of it, but keep the original one. How can you do this?
 
+ARRAYS:
+@ let newArray = originalArray.slice();
+
+or 
+
+@ let newArray = [...originalArray];
+
+---------
+
+OBJECTS:
+@ let newObject = Object.assign({}, originalObject);
+
+or 
+
+@ let newObject = {...originalObject}
 
 -----------------------------------------------------------------------------------------------------------------------------
 
