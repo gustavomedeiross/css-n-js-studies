@@ -1,1 +1,48 @@
-#empty
+AJAX stands for Asynchronous JavaScript and XML, and it's a way of making requests from an API.
+
+JavaScript has a special object to do AJAX calls: the XMLHttpRequest object.
+
+//Usually, people will call the XMLHttpRequest object as "xhr".
+
+Most used methods/properties:
+
+@ xhr.open('METHOD', url, true|false); //opens a request to the server. The first argument is the method (GET, POST, PUT or DELETE), the second argument is the url of the API, and the third argument (optional) is that if it's async or not - boolean type (if you don't set anything, it will consider async).
+
+
+@ xhr.send(); //sends the request to the server. It can have an argument, but it's better to see the JavaScript documentation.
+
+
+@ xhr.onreadystatechange; //an event that runs when the readyState changes
+
+
+@ xhr.onload; //an event that runs when the request is done
+
+
+@ xhr.responseText; //the reponse itself (the data)
+
+
+@ xhr.responseType; //you can set the type of the response (Text, XML, etc)
+
+
+@ xhr.response; //the response, but the type isn't specified
+
+
+@ xhr.onprogress; //event that runs when it's doing the actual request (readyState == 2 || 3)
+
+
+@ xhr.readyState; //a property that shows the ready state of the request (better explained below)
+
+
+@ xhr.status; //a property that shows the status of the request (better explained below)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+Important values to work with XMLHttpRequest:
+
+READYSTATE: It can have 5 different values:
+0:
+1:
+2:
+3:
+4:
+5:
