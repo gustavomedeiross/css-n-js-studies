@@ -1,0 +1,30 @@
+The high-order function Filter is a native method built-in all arrays, natively. 
+The main function of it is to filter an array, based on a condition - and it returns this new, filtered, array.
+
+As the filter method is a high-order function, it will always receive another function as an argument (and that function has an argument too - the value of the index that it's analyzing).
+
+
+let myArray = [10, 15, 5, 2, 12];
+@ let filteredArray = myArray.filter((value)=>{
+  return value <= 10;
+});
+console.log(filteredArray);
+
+>>> [10, 5, 2]    //output
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+This would be the filter method from the "inside":
+
+function newFilter(callback){
+    let filteredArray = [];
+    this.forEach((value)=>{
+        if(callback(value)){
+            filteredArray.push(value);
+        }
+    })
+    return filteredArray;
+}
+
+
+//and you have to assign this function as a method of the array too
