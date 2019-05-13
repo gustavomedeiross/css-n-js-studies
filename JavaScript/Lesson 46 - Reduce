@@ -1,0 +1,6 @@
+  The high-order function Map is a native method built-in all arrays.
+  Reduce is used to get just one value, based on ALL the array values. It can be a sum, a concatenation, etc.
+  
+  As the reduce method is a high-order function, it will always receive another function as an argument (and that function has an argument too - the value of the index that it's analyzing).
+  
+  
