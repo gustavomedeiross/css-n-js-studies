@@ -1,0 +1,42 @@
+The bitwise logical operators are not really used in a practical way, because they were made to work with binary numbers (and you don't work with binary in JavaScript).
+
+But, bitwise AND (&) can have a practical usage:
+
+If you make an if statement and use the normal AND operator (&&), it will check if all conditions are true (that's the only way it's going to run the block - because it's an AND).
+
+If some condition is false, the "if" is not even going to check the other conditions. If those conditions that are not going to be checked are functions (returning booleans), they are not going to be called.
+
+But if you use the bitwise AND, it's going to look at all conditions, even knowing it's false already. 
+
+
+Example:
+
+function logA(){
+    console.log('A');
+    return false;
+}
+function logB(){
+    console.log('B');
+    return true;
+}
+if(logA() && logB()){
+    console.log('Hey guys!')
+}
+
+>>> A      //logB is not going to run, because logA already returned false
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+function logA(){
+    console.log('A');
+    return false;
+}
+function logB(){
+    console.log('B');
+    return true;
+}
+if(logA() & logB()){
+    console.log('Hey guys!')
+}
+
+>>> A  B
