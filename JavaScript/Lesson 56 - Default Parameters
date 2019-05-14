@@ -1,0 +1,23 @@
+Default parameters are a way to set default values to function parameters.
+
+Example:
+
+function sumNumbers(a, b){
+  return a + b;
+}
+console.log(sumNumbers(1));  //just one argument, when it's requiring 2
+
+>>> NaN  //Not a Number - because it's a sum between 1 and...? (undefined)
+
+----------------------------------------------------------------------------
+
+The default values of arguments in function is "undefined". But sometimes you'll need to set a custom default value:
+
+@ function sumNumbers(a = 2, b = 5){
+  return a + b;
+}
+console.log(sumNumbers(2, 2));
+console.log(sumNumbers(10));
+console.log();
+
+>>> 4   15   7
