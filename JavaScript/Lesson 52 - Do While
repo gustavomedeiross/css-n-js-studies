@@ -1,0 +1,11 @@
+The difference between a "do while" and a "while" loop is that the first one will always run at least one time
+It's going to run first, and then see the conditional.
+
+Example:
+
+let a = 10;
+do{
+    console.log(a);
+}while(a < 5);
+
+>>> 10   //it will run once, and then check the condition. In this case, is already false, so it stops right away.
