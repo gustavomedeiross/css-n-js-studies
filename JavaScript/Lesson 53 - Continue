@@ -1,1 +1,29 @@
-#empty
+Continue is used in loops, and it's very similar to break. The main difference is that break breaks away from the whole loop, while continue breaks away from the current loop.
+
+Continue is normally used to save processing, avoiding unnecessary conditionals, for example.
+
+It doesn't work with forEach, just for, while and do while.
+
+Example:
+
+let people = [
+    {name: 'Gustavo', age: 19},
+    {name: 'Letícia', age: 16},
+    {name: 'Maria', age: 18}
+];
+for(let value of people){
+    if(value.age === 16){
+        console.log(value.name + ' is sixteen years old');
+        continue;
+    }
+    if(value.age === 18){
+        console.log(value.name + ' is eighteen years old');
+        continue;
+    }
+    if(value.age === 19){
+        console.log(value.name + ' is nineteen years old');
+        continue;
+    }
+}
+
+//this is a stupid example, but the main point is to show that you can use continue to prevent unnecessary processing.
