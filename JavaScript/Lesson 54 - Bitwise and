@@ -1,6 +1,6 @@
 The bitwise logical operators are not really used in a practical way, because they were made to work with binary numbers (and you don't work with binary in JavaScript).
 
-But, bitwise AND (&) can have a practical usage:
+But, bitwise AND (&) can have a specific practical usage:
 
 If you make an if statement and use the normal AND operator (&&), it will check if all conditions are true (that's the only way it's going to run the block - because it's an AND).
 
