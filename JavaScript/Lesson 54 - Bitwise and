@@ -23,7 +23,7 @@ if(logA() && logB()){
     console.log('Hey guys!')
 }
 
->>> A      //logB is not going to run, because logA already returned false
+>>> A  //logB is not going to run, because logA already returned false
 
 -----------------------------------------------------------------------------------------------------------------------------
 
