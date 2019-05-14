@@ -15,13 +15,13 @@ Most used methods/properties:
 @ xhr.onreadystatechange; //an event that runs when the readyState changes
 
 
-@ xhr.onload; //an event that runs when the request is done
+@ xhr.onload; //an event that runs when the request is finished - readyState 4
 
 
 @ xhr.responseText; //the reponse itself (the data)
 
 
-@ xhr.responseType; //you can set the type of the response (Text, XML, etc)
+@ xhr.responseType; //you can set the type of the response (Text, json, etc)
 
 
 @ xhr.response; //the response, but the type isn't specified
@@ -40,9 +40,17 @@ Most used methods/properties:
 Important values to work with XMLHttpRequest:
 
 READYSTATE: It can have 5 different values:
-0:
-1:
-2:
-3:
-4:
-5:
+0: Request not initialized
+1: Server connection established
+2: Request received
+3: Processing request
+4: Request finished and response is ready
+
+
+STATUS: It can have a lot of values, but the most common ones are:
+200: OK
+403: Forbidden
+404: Page not found
+
+
+
