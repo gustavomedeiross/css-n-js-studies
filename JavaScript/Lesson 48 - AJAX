@@ -4,6 +4,8 @@ JavaScript has a special object to do AJAX calls: the XMLHttpRequest object.
 
 //Usually, people will call the XMLHttpRequest object as "xhr".
 
+-----------------------------------------------------------------------------------------------------------------------------
+
 Most used methods/properties:
 
 @ xhr.open('METHOD', url, true|false); //opens a request to the server. The first argument is the method (GET, POST, PUT or DELETE), the second argument is the url of the API, and the third argument (optional) is that if it's async or not - boolean type (if you don't set anything, it will consider async).
@@ -52,5 +54,46 @@ STATUS: It can have a lot of values, but the most common ones are:
 403: Forbidden
 404: Page not found
 
+-----------------------------------------------------------------------------------------------------------------------------
+
+Example of an AJAX call:
+
+//using onload (easier/less code)
+
+const url = 'https://api.github.com/users/mendes13';
+let xhr = new XMLHttpRequest();
+xhr.open('GET', url);
+xhr.send();
+xhr.onload = function(){
+    if(this.status === 200){
+        console.log(JSON.parse(xhr.responseText).name);
+    }
+}
 
 
+or
+
+//using onreadystatechange + readyState (you can make better animations when loading, because of the readyState)
+
+const url = 'https://api.github.com/users/mendes13';
+let xhr = new XMLHttpRequest();
+xhr.open('GET', url);
+xhr.send();
+xhr.onreadystatechange = function(){
+    if(this.readyState === 4){ 
+        if(this.status === 200){
+            console.log(JSON.parse(xhr.responseText).name);
+        }
+    }
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+More resources:
+
+https://www.w3schools.com/xml/ajax_xmlhttprequest_response.asp
+https://www.w3schools.com/tags/ref_httpmessages.asp
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+https://www.youtube.com/watch?v=82hnvUYY6QA
