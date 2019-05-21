@@ -1,4 +1,4 @@
-# FrontendStudies
+# Studies
 
 At first, this was just to keep my studies about Frontend web development (HTML, CSS and Javascript). But now, this repository is going to be about any new concepts that I learn about programming in general, wheter being frontend, backend, mobile, databases or any technology that I found interesting and want to store it's concepts here.
 
