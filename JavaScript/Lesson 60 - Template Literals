@@ -1,1 +1,24 @@
-#empty
+Template Literals are a much easier and cleanier way if making strings concatenating.
+
+This:
+
+'Hello ' + name + ', are you feeling ok?'
+
+
+Is going to look like this:
+
+@ `Hello ${name}, are you feeling ok?`
+
+
+You need to use the "``", and to concatenate, the syntax is "${variableOrValue}".
+
+
+
+You don't have to use "\n" too! Example:
+
+`Hello. This string starts on this line,
+
+moves to this line,
+
+and now it's down there.
+isn't that nice?!`
