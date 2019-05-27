@@ -1,1 +1,54 @@
-class - constructor - methods - super - static
+class - constructor - methods - super - static - extends
+
+A Class in object-oriented programming is a "template" of an object. To actually create the object (based on the Class), you'll have to instantiate the object (using "new").
+
+A Class in JavaScript is a Constructor Function, but with syntax sugar. In fact, classes have a default "constructor()" method (and that's where it goes all the properties and arguments. To create properties, you must use the "this" keyword, just like a constructor function). The methods of the class are set separately. 
+
+It's a good practice to name classes with capital letters (uppercase in the first letter).
+
+Example:
+
+@ class Dog{
+  constructor(name){                 //constructor method (with an argument)
+    this.name = name,
+    this.sound = woof
+  }
+  bark(){                            //custom method of the object
+    console.log(this.sound);
+  }
+}
+
+const myDog = new Dog('Thor');       //instance of the dog
+myDog.bark(); 
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+You can create classes that inherit properties and methods from another class - once you inherit something, it will inhertit everything. To do this, we use the keywords "extends" and "super()" in the constructor (you'll need to use "super()" if you want to change/add some property on the constructor, otherwise you don't have to call it).
+
+class Poodle extends Dog{
+  constructor(name){         //as the inherited class calls for an argument, you need to set here too - and in "super()".
+    super(name);
+    this.color = 'White'
+  }
+  run(){
+    console.log("I'm running");
+  }
+}
+
+let mel = new Poodle('Mel'); 
+mel.bark();                       //you can have access to the properties/methods of the "Dog" class + the new ones.
+mel.run();
+
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+You can have access to static method too. This methods can be called by the Class itself - so you don't have to instantiate an object to use the method. Normally, this is used to make really simple functions (like math functions). To do this, you need to use the keyword "static".Example:
+
+class MathOperations{
+  static sum(a, b){
+    return a + b;
+  }
+}
+console.log(MathOperations.sum(2, 2));           //you didn't instantiate any object.
+
+>>> 4
