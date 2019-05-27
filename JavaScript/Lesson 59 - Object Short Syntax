@@ -1,1 +1,31 @@
-#empty
+In ES6, if the name of the property is the same name as another variable/argument that you want to store the value of it, you don't need to write the same name two times. Example:
+
+const name = 'Gustavo';
+const age = 19;
+
+const myObj = {
+  name,                 //I just used "name" this means "name: name" 
+  age                   // and "age: age"
+};
+
+console.log(myObj);
+
+
+>>> {name: 'Gustavo', age: 19}
+
+------------------------------------------------------------------------
+
+You can do it with arguments too:
+
+class Person{
+    constructor(name, age){
+        return{                      //I am returning an object, doing the same function as a "this" would do. 
+            name, 
+            age
+        }
+    }
+}
+let gustavo = new Person('Gustavo', 19);
+console.log(gustavo);
+
+>>> {name: 'Gustavo', age: 19}
