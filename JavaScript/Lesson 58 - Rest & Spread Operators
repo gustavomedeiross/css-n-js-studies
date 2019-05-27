@@ -1,1 +1,64 @@
-#empty
+Both Rest and Spread operators use "..." as their syntax. The difference between one and another is their functionality and situation.
+
+
+The "REST" operator basically gets the rest of an array or object (when destructuring). Example (Object):
+
+let myObject = {
+  name: 'Gustavo',
+  age: 19,
+  university: 'Unisul',
+  country: 'Brazil'
+}
+
+@ let {age, ...restOp} = myObject;   //it will get all the values that weren't assigned on the destructuring
+console.log(restOp);
+
+>>> {
+  name: 'Gustavo',
+  university: 'Unisul',
+  country: 'Brazil'
+}
+
+-------------------------------
+
+Other example (Array):
+
+let myArray = [1, 5, 2, 19, 30];
+@ let [a, b, ...restOp] = myArray;            //in this case, a = 1 and b = 5
+console.log(restOp);
+
+>>> [2, 19, 30]
+
+-----------------------------------------------------------------
+
+You can use the REST operator in function arguments too! (It will return an array). When you use the REST as arguments, the number of arguments are customizable. In the case above, 2 arguments are obligatory (a, b), but "...parameters" are optional. You can set an infinite number of parameters using the REST operator.
+
+Example:
+
+function sum(a, b, ...parameters){               
+  return a + b + parameters.reduce((total, value) => total + value);       
+}
+console.log(sum(1, 2, 3, 4, 5, 6, 7)); 
+
+>>> 28
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+The "SPREAD" operator will spread an entire array/object in to different values - they are going to be "outside" the array. This can be very useful to join different arrays/objects, or creating a new array but with the values of another array - value assignment with arrays/objects.
+
+Example:
+
+let myArray1 = [1, 2, 3];
+let myArray2 = [4, 5, 6];
+
+let newArray = [...myArray1, ...myArray2];   
+console.log(newArray);
+
+>>> [1, 2, 3, 4, 5, 6]
+
+----------------------------------------
+
+A cleaner look of what the spread operator does:
+
+let myArray = [1, 2, 3, 4];
+let spread = [...myArray];  //at this point the "myArray" looks like this: 1,    2,    3,    4, (it spreads out)
