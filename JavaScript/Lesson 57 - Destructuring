@@ -1,1 +1,18 @@
-#empty
+Destructuring is a very useful ES6 tool. It's widely used in ReactJS, Angular and Vue applications.
+
+Basically is a quick way of assigning object properties to new variables, using the same variable name. Example:
+
+const myObject = {
+  name: 'Gustavo',
+  age: 19,
+  university: 'Unisul'
+}
+
+//this creates two variables that will store the value of "name" and "age" inside "myObject" object:
+
+@ const {name, age} = myObject;   
+
+console.log(name);
+console.log(age);
+
+>>> 'Gustavo'    19
