@@ -14,7 +14,7 @@ You need to use the "``", and to concatenate, the syntax is "${variableOrValue}"
 
 
 
-You don't have to use "\n" too! Example:
+You don't have to use "\n" too! It will recognize any line break automatically. Example:
 
 `Hello. This string starts on this line,
 
