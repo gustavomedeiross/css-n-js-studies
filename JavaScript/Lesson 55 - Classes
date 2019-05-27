@@ -52,3 +52,11 @@ class MathOperations{
 console.log(MathOperations.sum(2, 2));           //you didn't instantiate any object.
 
 >>> 4
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+More resources:
+
+https://www.youtube.com/watch?v=T-HGdc8L-7w
+https://www.youtube.com/watch?v=rHiSsgFRgx4
+https://www.youtube.com/watch?v=Tllw4EPhLiQ
