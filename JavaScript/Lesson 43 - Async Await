@@ -58,6 +58,12 @@ async function doThis(){
 
 The "await" keyword just works inside async functions!
 
+-----------------------------------------------------------------------------------------------------------------------------
+
+When you return something from an Async Function, it's going to be a promise. So if you return a value, you need to add a ".then(value => value)" to get this value outside the function.
+
+-----------------------------------------------------------------------------------------------------------------------------
+
 More resources:
 https://javascript.info/async-await
 https://www.youtube.com/watch?v=568g8hxJJp4
