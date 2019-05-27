@@ -2,7 +2,7 @@ class - constructor - methods - super - static - extends
 
 A Class in object-oriented programming is a "template" of an object. To actually create the object (based on the Class), you'll have to instantiate the object (using "new").
 
-A Class in JavaScript is a Constructor Function, but with syntax sugar. In fact, classes have a default "constructor()" method (and that's where it goes all the properties and arguments. To create properties, you must use the "this" keyword, just like a constructor function). The methods of the class are set separately. 
+A Class in JavaScript is a Constructor Function, but with syntax sugar. In fact, classes have a default "constructor()" method (and that's where it goes all the properties and arguments. To create properties, you must use the "this" keyword, just like a constructor function - or you can return an object). The methods of the class are set separately. 
 
 It's a good practice to name classes with capital letters (uppercase in the first letter).
 
