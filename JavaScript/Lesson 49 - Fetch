@@ -42,3 +42,14 @@ async function githubFetch(){
 githubFetch();
 
 >>> 'Gustavo Mendes de Medeiros'
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+You can do POST requests too, adding a second argument with options: 
+
+fetch(url, {
+  method: 'POST',
+  body: something
+})
+  .then(response => response.json())
+  .then(object => console.log(object));
