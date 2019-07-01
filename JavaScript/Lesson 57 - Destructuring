@@ -16,3 +16,21 @@ console.log(name);
 console.log(age);
 
 >>> 'Gustavo'    19
+
+----------------------------------------------------------------
+
+You can destructure using a different name than the property:
+
+const myObject = {
+  name: 'Gustavo',
+  age: 19
+}
+
+const {name: gustavoName} = myObject;
+
+console.log(name);
+console.log(gustavoName);
+
+
+>>> undefined 
+>>> 'Gustavo'
