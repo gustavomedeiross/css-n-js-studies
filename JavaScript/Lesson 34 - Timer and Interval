@@ -1,4 +1,4 @@
-@ setTimeout (method, timeMilliseconds); //this will make a timeout, like a little time for something to happen (just one time).
+@ setTimeout (method, timeMilliseconds); //this will make a timeout, like a timer for something to happen (just one time).
 
 -----------------------------
 
